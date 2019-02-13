@@ -29,9 +29,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         movement = Input.GetAxis("Horizontal");
-        rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
+        if (movement != 0)
+        {
+            rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
+        }
+
         animator.SetFloat("speed", movement*movement); // changes the animation of the sprite to running
-        animator.SetFloat("verticalSpeed", Input.GetAxis("Vertical"));
 
         // invert the sprites image to simulate turning left and right
         if (movement > 0f && !facingRight) // if not looking right... look right
@@ -98,6 +101,22 @@ public class PlayerMovement : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals("platforms(Clone)"))
+        {
+            this.transform.SetParent(transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals("platforms(Clone)"))
+        {
+            this.transform.SetParent(null);
+        }
     }
 
 }
