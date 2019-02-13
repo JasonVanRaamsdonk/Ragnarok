@@ -1,0 +1,1226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2019-02-13T20:09:49.091+00:00
+  initializedAtString: 2019-02-13T20:09:49.091+00:00
+  log:
+  - commitID: 823d03a0dd67f477e71d62a957077dfa2a0cfe79
+    mergeA: 
+    mergeB: 
+    authorName: Tadhg O'Rourke
+    authorEmail: orourketadhg@gmail.com
+    commitEmail: orourketadhg@gmail.com
+    commitName: Tadhg O'Rourke
+    summary: Initial Commit of Player 2
+    description: Initial Commit of Player 2
+    timeString: 2019-02-13T18:58:15.000+00:00
+    commitTimeString: 2019-02-13T18:58:15.000+00:00
+    changes:
+    - path: Assets\Animations.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations.meta
+      projectPath: Assets\Animations.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\QuickFireProjectile.anim
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\QuickFireProjectile.anim
+      projectPath: Assets\Animations\QuickFireProjectile.anim
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\QuickFireProjectile.anim.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\QuickFireProjectile.anim.meta
+      projectPath: Assets\Animations\QuickFireProjectile.anim.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\QuickFireProjectile.controller
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\QuickFireProjectile.controller
+      projectPath: Assets\Animations\QuickFireProjectile.controller
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\QuickFireProjectile.controller.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\QuickFireProjectile.controller.meta
+      projectPath: Assets\Animations\QuickFireProjectile.controller.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHead.controller
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHead.controller
+      projectPath: Assets\Animations\SnakeHead.controller
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHead.controller.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHead.controller.meta
+      projectPath: Assets\Animations\SnakeHead.controller.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHeadMotion.anim
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHeadMotion.anim
+      projectPath: Assets\Animations\SnakeHeadMotion.anim
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHeadMotion.anim.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHeadMotion.anim.meta
+      projectPath: Assets\Animations\SnakeHeadMotion.anim.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHeadOpenMouth.anim
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHeadOpenMouth.anim
+      projectPath: Assets\Animations\SnakeHeadOpenMouth.anim
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHeadOpenMouth.anim.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHeadOpenMouth.anim.meta
+      projectPath: Assets\Animations\SnakeHeadOpenMouth.anim.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHeadQuickFire.anim
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHeadQuickFire.anim
+      projectPath: Assets\Animations\SnakeHeadQuickFire.anim
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Animations\SnakeHeadQuickFire.anim.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Animations\SnakeHeadQuickFire.anim.meta
+      projectPath: Assets\Animations\SnakeHeadQuickFire.anim.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins.meta
+      projectPath: Assets\Plugins.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub.meta
+      projectPath: Assets\Plugins\GitHub.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor.meta
+      projectPath: Assets\Plugins\GitHub\Editor.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.pdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Api.pdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.pdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\System.Threading.dll
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\credits.txt
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\credits.txt
+      projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\credits.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\eula.txt
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\eula.txt
+      projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\eula.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\libsfw.bundle
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.so
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\libsfw.so
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\sfw.net.dll
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x64.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x64.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x86.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x86.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Prefabs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Prefabs.meta
+      projectPath: Assets\Prefabs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Prefabs\QuickFireProjectile.prefab
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Prefabs\QuickFireProjectile.prefab
+      projectPath: Assets\Prefabs\QuickFireProjectile.prefab
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Prefabs\QuickFireProjectile.prefab.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Prefabs\QuickFireProjectile.prefab.meta
+      projectPath: Assets\Prefabs\QuickFireProjectile.prefab.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scenes.meta
+      projectPath: Assets\Scenes.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\GameScene.unity
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scenes\GameScene.unity
+      projectPath: Assets\Scenes\GameScene.unity
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\GameScene.unity.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scenes\GameScene.unity.meta
+      projectPath: Assets\Scenes\GameScene.unity.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts.meta
+      projectPath: Assets\Scripts.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\Player2Controller.cs
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\Player2Controller.cs
+      projectPath: Assets\Scripts\Player2Controller.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\Player2Controller.cs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\Player2Controller.cs.meta
+      projectPath: Assets\Scripts\Player2Controller.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\Player2QuickFire.cs
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\Player2QuickFire.cs
+      projectPath: Assets\Scripts\Player2QuickFire.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\Player2QuickFire.cs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\Player2QuickFire.cs.meta
+      projectPath: Assets\Scripts\Player2QuickFire.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\QuickProjectileMotion.cs
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\QuickProjectileMotion.cs
+      projectPath: Assets\Scripts\QuickProjectileMotion.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\QuickProjectileMotion.cs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\QuickProjectileMotion.cs.meta
+      projectPath: Assets\Scripts\QuickProjectileMotion.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\SnakeBodyMotion.cs
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\SnakeBodyMotion.cs
+      projectPath: Assets\Scripts\SnakeBodyMotion.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\SnakeBodyMotion.cs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\SnakeBodyMotion.cs.meta
+      projectPath: Assets\Scripts\SnakeBodyMotion.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\SnakeHeadMotion.cs
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\SnakeHeadMotion.cs
+      projectPath: Assets\Scripts\SnakeHeadMotion.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\SnakeHeadMotion.cs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scripts\SnakeHeadMotion.cs.meta
+      projectPath: Assets\Scripts\SnakeHeadMotion.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites.meta
+      projectPath: Assets\Sprites.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms.meta
+      projectPath: Assets\Sprites\Platforms.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 01 (512X512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 01
+        (512X512).png
+      projectPath: Assets\Sprites\Platforms\Grass 01 (512X512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 01 (512X512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 01
+        (512X512).png.meta
+      projectPath: Assets\Sprites\Platforms\Grass 01 (512X512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 02 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 02
+        (512x512).png
+      projectPath: Assets\Sprites\Platforms\Grass 02 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 02 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 02
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Platforms\Grass 02 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 03 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 03
+        (512x512).png
+      projectPath: Assets\Sprites\Platforms\Grass 03 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 03 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 03
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Platforms\Grass 03 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 04 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 04
+        (512x512).png
+      projectPath: Assets\Sprites\Platforms\Grass 04 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Platforms\Grass 04 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Platforms\Grass 04
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Platforms\Grass 04 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player1Buffs.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player1Buffs.meta
+      projectPath: Assets\Sprites\Player1Buffs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player1Buffs\JumpUpgrade 01 (32x32).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player1Buffs\JumpUpgrade
+        01 (32x32).png
+      projectPath: Assets\Sprites\Player1Buffs\JumpUpgrade 01 (32x32).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player1Buffs\JumpUpgrade 01 (32x32).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player1Buffs\JumpUpgrade
+        01 (32x32).png.meta
+      projectPath: Assets\Sprites\Player1Buffs\JumpUpgrade 01 (32x32).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player1Buffs\PotionUpgrade 01 (32x32).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player1Buffs\PotionUpgrade
+        01 (32x32).png
+      projectPath: Assets\Sprites\Player1Buffs\PotionUpgrade 01 (32x32).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player1Buffs\PotionUpgrade 01 (32x32).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player1Buffs\PotionUpgrade
+        01 (32x32).png.meta
+      projectPath: Assets\Sprites\Player1Buffs\PotionUpgrade 01 (32x32).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player2Crosshair.png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player2Crosshair.png
+      projectPath: Assets\Sprites\Player2Crosshair.png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Player2Crosshair.png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Player2Crosshair.png.meta
+      projectPath: Assets\Sprites\Player2Crosshair.png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles.meta
+      projectPath: Assets\Sprites\Projectiles.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 01.png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        01.png
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 01.png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 01.png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        01.png.meta
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 01.png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 02.png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        02.png
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 02.png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 02.png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        02.png.meta
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 02.png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 03.png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        03.png
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 03.png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 03.png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        03.png.meta
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 03.png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 04.png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        04.png
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 04.png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Projectiles\Player2QuickProjectile 04.png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Projectiles\Player2QuickProjectile
+        04.png.meta
+      projectPath: Assets\Sprites\Projectiles\Player2QuickProjectile 04.png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles.meta
+      projectPath: Assets\Sprites\SaveFiles.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\JumpUpgrade Save File.piskel
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\JumpUpgrade
+        Save File.piskel
+      projectPath: Assets\Sprites\SaveFiles\JumpUpgrade Save File.piskel
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\JumpUpgrade Save File.piskel.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\JumpUpgrade
+        Save File.piskel.meta
+      projectPath: Assets\Sprites\SaveFiles\JumpUpgrade Save File.piskel.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\Player2Crosshair-20190211-192800.piskel
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\Player2Crosshair-20190211-192800.piskel
+      projectPath: Assets\Sprites\SaveFiles\Player2Crosshair-20190211-192800.piskel
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\Player2Crosshair-20190211-192800.piskel.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\Player2Crosshair-20190211-192800.piskel.meta
+      projectPath: Assets\Sprites\SaveFiles\Player2Crosshair-20190211-192800.piskel.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\Player2QuickProjectile 01-20190211-194857.piskel
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\Player2QuickProjectile
+        01-20190211-194857.piskel
+      projectPath: Assets\Sprites\SaveFiles\Player2QuickProjectile 01-20190211-194857.piskel
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\Player2QuickProjectile 01-20190211-194857.piskel.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\Player2QuickProjectile
+        01-20190211-194857.piskel.meta
+      projectPath: Assets\Sprites\SaveFiles\Player2QuickProjectile 01-20190211-194857.piskel.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\PotionUpgrade 01 SaveFile.piskel
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\PotionUpgrade
+        01 SaveFile.piskel
+      projectPath: Assets\Sprites\SaveFiles\PotionUpgrade 01 SaveFile.piskel
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\PotionUpgrade 01 SaveFile.piskel.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\PotionUpgrade
+        01 SaveFile.piskel.meta
+      projectPath: Assets\Sprites\SaveFiles\PotionUpgrade 01 SaveFile.piskel.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\SnakeBody 01-20190212-152243.piskel
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\SnakeBody
+        01-20190212-152243.piskel
+      projectPath: Assets\Sprites\SaveFiles\SnakeBody 01-20190212-152243.piskel
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\SnakeBody 01-20190212-152243.piskel.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\SnakeBody
+        01-20190212-152243.piskel.meta
+      projectPath: Assets\Sprites\SaveFiles\SnakeBody 01-20190212-152243.piskel.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\_SnakeHead Save File.piskel
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\_SnakeHead
+        Save File.piskel
+      projectPath: Assets\Sprites\SaveFiles\_SnakeHead Save File.piskel
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\SaveFiles\_SnakeHead Save File.piskel.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\SaveFiles\_SnakeHead
+        Save File.piskel.meta
+      projectPath: Assets\Sprites\SaveFiles\_SnakeHead Save File.piskel.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake.meta
+      projectPath: Assets\Sprites\Snake.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeBody 01 (2048x2048).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeBody 01
+        (2048x2048).png
+      projectPath: Assets\Sprites\Snake\SnakeBody 01 (2048x2048).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeBody 01 (2048x2048).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeBody 01
+        (2048x2048).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeBody 01 (2048x2048).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 01 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 01
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeHead 01 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 01 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 01
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeHead 01 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 02 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 02
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeHead 02 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 02 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 02
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeHead 02 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 03 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 03
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeHead 03 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 03 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 03
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeHead 03 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 04 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 04
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeHead 04 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 04 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 04
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeHead 04 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 05 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 05
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeHead 05 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 05 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 05
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeHead 05 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 06 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 06
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeHead 06 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeHead 06 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeHead 06
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeHead 06 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 01 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 01
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeMouth 01 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 01 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 01
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeMouth 01 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 02 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 02
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeMouth 02 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 02 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 02
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeMouth 02 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 03 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 03
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeMouth 03 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 03 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 03
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeMouth 03 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 04 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 04
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeMouth 04 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 04 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 04
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeMouth 04 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 05 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 05
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeMouth 05 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 05 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 05
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeMouth 05 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 06 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 06
+        (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeMouth 06 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeMouth 06 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeMouth 06
+        (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeMouth 06 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeQuickFire 01 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeQuickFire
+        01 (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeQuickFire 01 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeQuickFire 01 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeQuickFire
+        01 (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeQuickFire 01 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeQuickFire 02 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeQuickFire
+        02 (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeQuickFire 02 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeQuickFire 02 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeQuickFire
+        02 (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeQuickFire 02 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeQuickFire 03 (512x512).png
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeQuickFire
+        03 (512x512).png
+      projectPath: Assets\Sprites\Snake\SnakeQuickFire 03 (512x512).png
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Sprites\Snake\SnakeQuickFire 03 (512x512).png.meta
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\Sprites\Snake\SnakeQuickFire
+        03 (512x512).png.meta
+      projectPath: Assets\Sprites\Snake\SnakeQuickFire 03 (512x512).png.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Logs\Packages-Update.log
+      fullPath: D:\Programming\Unity\Project-Kaa\Logs\Packages-Update.log
+      projectPath: Logs\Packages-Update.log
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Packages\manifest.json
+      fullPath: D:\Programming\Unity\Project-Kaa\Packages\manifest.json
+      projectPath: Packages\manifest.json
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\AudioManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\AudioManager.asset
+      projectPath: ProjectSettings\AudioManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\ClusterInputManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\ClusterInputManager.asset
+      projectPath: ProjectSettings\ClusterInputManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\DynamicsManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\DynamicsManager.asset
+      projectPath: ProjectSettings\DynamicsManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\EditorBuildSettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\EditorBuildSettings.asset
+      projectPath: ProjectSettings\EditorBuildSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\EditorSettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\EditorSettings.asset
+      projectPath: ProjectSettings\EditorSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\GraphicsSettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\GraphicsSettings.asset
+      projectPath: ProjectSettings\GraphicsSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\InputManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\InputManager.asset
+      projectPath: ProjectSettings\InputManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\NavMeshAreas.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\NavMeshAreas.asset
+      projectPath: ProjectSettings\NavMeshAreas.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\NetworkManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\NetworkManager.asset
+      projectPath: ProjectSettings\NetworkManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\Physics2DSettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\Physics2DSettings.asset
+      projectPath: ProjectSettings\Physics2DSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\PresetManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\PresetManager.asset
+      projectPath: ProjectSettings\PresetManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\ProjectVersion.txt
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\ProjectVersion.txt
+      projectPath: ProjectSettings\ProjectVersion.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\QualitySettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\QualitySettings.asset
+      projectPath: ProjectSettings\QualitySettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\TagManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\TimeManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\TimeManager.asset
+      projectPath: ProjectSettings\TimeManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\UnityConnectSettings.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\UnityConnectSettings.asset
+      projectPath: ProjectSettings\UnityConnectSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: ProjectSettings\VFXManager.asset
+      fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\VFXManager.asset
+      projectPath: ProjectSettings\VFXManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+  - commitID: 5a6433d8ad4472726aba0755b5a8c08d8d00ba60
+    mergeA: 
+    mergeB: 
+    authorName: Tadhg O'Rourke
+    authorEmail: orourketadhg@gmail.com
+    commitEmail: orourketadhg@gmail.com
+    commitName: Tadhg O'Rourke
+    summary: Initial commit
+    description: Initial commit
+    timeString: 2019-02-13T18:57:02.000+00:00
+    commitTimeString: 2019-02-13T18:57:02.000+00:00
+    changes:
+    - path: .gitattributes
+      fullPath: D:\Programming\Unity\Project-Kaa\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: .gitignore
+      fullPath: D:\Programming\Unity\Project-Kaa\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\.gitignore
+      fullPath: D:\Programming\Unity\Project-Kaa\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      status: 4
+      staged: 0

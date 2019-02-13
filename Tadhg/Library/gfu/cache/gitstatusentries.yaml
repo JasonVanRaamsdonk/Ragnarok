@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 5
+  lastUpdatedAtString: 2019-02-13T20:11:07.902+00:00
+  initializedAtString: 2019-02-13T20:10:54.940+00:00
+  entries:
+  - path: .gitignore
+    fullPath: D:\Programming\Unity\Project-Kaa\.gitignore
+    projectPath: .gitignore
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\GameScene.unity
+    fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scenes\GameScene.unity
+    projectPath: Assets\Scenes\GameScene.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
