@@ -513,10 +513,10 @@ GameObject:
   m_Component:
   - component: {fileID: 401945443}
   - component: {fileID: 401945442}
-  - component: {fileID: 401945441}
   - component: {fileID: 401945440}
   - component: {fileID: 401945439}
   - component: {fileID: 401945444}
+  - component: {fileID: 401945441}
   m_Layer: 0
   m_Name: PlayerFox
   m_TagString: Untagged
@@ -589,7 +589,7 @@ Animator:
   m_GameObject: {fileID: 401945438}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9455f835aaff6dc498cc32716ef8ad74, type: 2}
+  m_Controller: {fileID: 9100000, guid: afc5c08ae5dde6146abebee046d19870, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
