@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cacheType: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-02-13T20:10:54.622+00:00
   initializedAtString: 2019-02-13T20:10:54.622+00:00
   currentGitRemote:
@@ -22,6 +23,10 @@ MonoBehaviour:
 =======
   lastUpdatedAtString: 2019-02-13T21:09:10.142+00:00
   initializedAtString: 2019-02-13T21:09:10.142+00:00
+=======
+  lastUpdatedAtString: 2019-02-13T23:45:20.753+00:00
+  initializedAtString: 2019-02-13T23:45:20.753+00:00
+>>>>>>> 30e18c396d7a161b95cd729ff768d292ebdb1f2b
   currentGitRemote:
     name: origin
     url: https://github.com/Drakodav/Project-Kaa.git

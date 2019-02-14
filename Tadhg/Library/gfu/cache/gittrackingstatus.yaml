@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cacheType: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-02-13T20:10:54.951+00:00
   initializedAtString: 2019-02-13T20:10:54.951+00:00
   ahead: 0
@@ -22,4 +23,9 @@ MonoBehaviour:
   initializedAtString: 2019-02-13T21:09:12.734+00:00
   ahead: 6
 >>>>>>> ee237879dc98e8288afde02364e38e2dc73107c0
+=======
+  lastUpdatedAtString: 2019-02-13T23:45:20.919+00:00
+  initializedAtString: 2019-02-13T23:45:20.919+00:00
+  ahead: 0
+>>>>>>> 30e18c396d7a161b95cd729ff768d292ebdb1f2b
   behind: 0

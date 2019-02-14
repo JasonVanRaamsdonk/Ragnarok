@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-02-13T20:09:48.694+00:00
-  initializedAtString: 2019-02-13T20:09:48.673+00:00
+  lastUpdatedAtString: 2019-02-13T23:41:07.627+00:00
+  initializedAtString: 2019-02-13T23:41:07.613+00:00
   localBranches:
   - name: master
-    tracking: 
-  remoteBranches: []
+    tracking: origin/master
+  remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/JasonVanRaamsdonk/Project-Kaa/tree/master/Tadhg_Player2
+    url: https://github.com/Drakodav/Project-Kaa.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  - name: upstream
+    url: https://github.com/JasonVanRaamsdonk/Project-Kaa.git
     login: 
     user: 
     host: 
@@ -33,16 +42,28 @@ MonoBehaviour:
     values:
     - name: master
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/Drakodav/Project-Kaa.git
+      trackingBranch: master
   remoteConfigBranches:
-    keys: []
-    subKeys: []
-    subKeyValues: []
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - HEAD
+    subKeyValues:
+    - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/Drakodav/Project-Kaa.git
+        trackingBranch: 
   configRemotes:
     keys:
     - origin
+    - upstream
     values:
     - name: origin
-      url: https://github.com/JasonVanRaamsdonk/Project-Kaa/tree/master/Tadhg_Player2
+      url: https://github.com/Drakodav/Project-Kaa.git
+    - name: upstream
+      url: https://github.com/JasonVanRaamsdonk/Project-Kaa.git
