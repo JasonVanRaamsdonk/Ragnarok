@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class CollisionTrigger : MonoBehaviour
 {
-    private BoxCollider2D playCollider;
+    private PolygonCollider2D playerCollider;
 
-    private BoxCollider platformCollider;
+    [SerializeField]
+    private BoxCollider2D platformCollider;
 
-    // Start is called before the first frame update
+    [SerializeField]
+    private BoxCollider2D platformTrigger;
+
+    // ignore the collider if player comming from other direction and not from the top
     void Start()
     {
-        playCollider = GameObject.find
+        playerCollider = GameObject.Find("PlayerFox").GetComponent<PolygonCollider2D>();
+        Physics2D.IgnoreCollision(platformCollider, platformTrigger, true);
     }
 
-    // Update is called once per frame
-    void Update()
+    //ignore all the movements when the player hits the collider on the bottom
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(other.gameObject.name == "PlayerFox")
+        {
+            Physics2D.IgnoreCollision(platformCollider, playerCollider, true);
+        }
+    }
+
+    //the top collider is taking in consideration
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "PlayerFox")
+        {
+            Physics2D.IgnoreCollision(platformCollider, playerCollider, false);
+         
+        }
     }
 }
