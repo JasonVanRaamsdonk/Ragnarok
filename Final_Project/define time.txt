@@ -1,0 +1,1 @@
+Go to "Edit > Project Settings > Time" and reduce the 'Fixed Timestep'

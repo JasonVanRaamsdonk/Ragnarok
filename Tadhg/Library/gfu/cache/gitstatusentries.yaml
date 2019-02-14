@@ -13,8 +13,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
+<<<<<<< HEAD
+<<<<<<< HEAD
+  lastUpdatedAtString: 2019-02-13T20:11:07.902+00:00
+  initializedAtString: 2019-02-13T20:10:54.940+00:00
+  entries:
+  - path: .gitignore
+    fullPath: D:\Programming\Unity\Project-Kaa\.gitignore
+    projectPath: .gitignore
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Scenes\GameScene.unity
+    fullPath: D:\Programming\Unity\Project-Kaa\Assets\Scenes\GameScene.unity
+    projectPath: Assets\Scenes\GameScene.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\QualitySettings.asset
+=======
+  lastUpdatedAtString: 2019-02-13T21:09:12.681+00:00
+  initializedAtString: 2019-02-13T21:09:12.681+00:00
+=======
   lastUpdatedAtString: 2019-02-14T00:24:39.781+00:00
   initializedAtString: 2019-02-13T23:45:20.907+00:00
+>>>>>>> 30e18c396d7a161b95cd729ff768d292ebdb1f2b
   entries:
   - path: Tadhg\Assets\Animations\SnakeHead.controller
     fullPath: C:\Users\Vlad\Desktop\Unity Games\Project-Kaa\Tadhg\Assets\Animations\SnakeHead.controller
@@ -138,16 +162,24 @@ MonoBehaviour:
     staged: 0
   - path: Tadhg\ProjectSettings\QualitySettings.asset
     fullPath: C:\Users\Vlad\Desktop\Unity Games\Project-Kaa\Tadhg\ProjectSettings\QualitySettings.asset
+>>>>>>> ee237879dc98e8288afde02364e38e2dc73107c0
     projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: D:\Programming\Unity\Project-Kaa\ProjectSettings\UnityConnectSettings.asset
+=======
   - path: Tadhg\ProjectSettings\UnityConnectSettings.asset
     fullPath: C:\Users\Vlad\Desktop\Unity Games\Project-Kaa\Tadhg\ProjectSettings\UnityConnectSettings.asset
+>>>>>>> ee237879dc98e8288afde02364e38e2dc73107c0
     projectPath: ProjectSettings\UnityConnectSettings.asset
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
+=======
   - path: Tadhg\Temp\__Backupscenes\0.backup
     fullPath: C:\Users\Vlad\Desktop\Unity Games\Project-Kaa\Tadhg\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
@@ -202,3 +234,4 @@ MonoBehaviour:
     originalPath: 
     status: 1
     staged: 0
+>>>>>>> ee237879dc98e8288afde02364e38e2dc73107c0
