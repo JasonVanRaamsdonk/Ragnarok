@@ -15,14 +15,14 @@ public class CollisionTrigger : MonoBehaviour
     // ignore the collider if player comming from other direction and not from the top
     void Start()
     {
-        playerCollider = GameObject.Find("PlayerFox").GetComponent<PolygonCollider2D>();
+        playerCollider = GameObject.Find("Player 1").GetComponent<PolygonCollider2D>();
         Physics2D.IgnoreCollision(platformCollider, platformTrigger, true);
     }
 
     //ignore all the movements when the player hits the collider on the bottom
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "PlayerFox")
+        if(other.gameObject.name == "Player 1")
         {
             Physics2D.IgnoreCollision(platformCollider, playerCollider, true);
         }
@@ -31,7 +31,7 @@ public class CollisionTrigger : MonoBehaviour
     //the top collider is taking in consideration
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.name == "PlayerFox")
+        if (other.gameObject.name == "Player 1")
         {
             Physics2D.IgnoreCollision(platformCollider, playerCollider, false);
          
