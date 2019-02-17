@@ -13,24 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  lastUpdatedAtString: 2019-02-13T20:10:54.622+00:00
-  initializedAtString: 2019-02-13T20:10:54.622+00:00
-  currentGitRemote:
-    name: origin
-    url: https://github.com/JasonVanRaamsdonk/Project-Kaa/tree/master/Tadhg_Player2
-=======
-  lastUpdatedAtString: 2019-02-13T21:09:10.142+00:00
-  initializedAtString: 2019-02-13T21:09:10.142+00:00
-=======
-  lastUpdatedAtString: 2019-02-13T23:45:20.753+00:00
-  initializedAtString: 2019-02-13T23:45:20.753+00:00
->>>>>>> 30e18c396d7a161b95cd729ff768d292ebdb1f2b
+  lastUpdatedAtString: 2019-02-17T13:47:54.396+00:00
+  initializedAtString: 2019-02-17T13:47:54.396+00:00
   currentGitRemote:
     name: origin
     url: https://github.com/Drakodav/Project-Kaa.git
->>>>>>> ee237879dc98e8288afde02364e38e2dc73107c0
     login: 
     user: 
     host: 
@@ -38,18 +25,6 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-<<<<<<< HEAD
-    tracking: 
-  currentConfigBranch:
-    name: master
-    remote:
-      name: 
-      url: 
-    trackingBranch: 
-  currentConfigRemote:
-    name: origin
-    url: https://github.com/JasonVanRaamsdonk/Project-Kaa/tree/master/Tadhg_Player2
-=======
     tracking: origin/master
   currentConfigBranch:
     name: master
@@ -60,5 +35,4 @@ MonoBehaviour:
   currentConfigRemote:
     name: origin
     url: https://github.com/Drakodav/Project-Kaa.git
->>>>>>> ee237879dc98e8288afde02364e38e2dc73107c0
   currentHead: 
