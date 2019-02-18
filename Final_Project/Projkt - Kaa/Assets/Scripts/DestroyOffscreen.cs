@@ -13,9 +13,22 @@ public class DestroyOffscreen : MonoBehaviour
     private float offscreenX = 0;
     private Rigidbody2D body2d;
 
+    public int health = 100;
+    public GameObject deathEffect;
+
     void Awake()
     {
         body2d = GetComponent<Rigidbody2D>();
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            OnOutOfBounds();
+        }
     }
 
     // Start is called before the first frame update
@@ -40,13 +53,13 @@ public class DestroyOffscreen : MonoBehaviour
         var dirX = body2d.velocity.x;
         // is the vlaue of the x position greater than the value of the offscreen x
 
-        if(Mathf.Abs(posX) > offscreenX)
+        if (Mathf.Abs(posX) > offscreenX)
         {
-            if(dirX < 0 && posX< -offscreenX)
+            if (dirX < 0 && posX < -offscreenX)
             {
                 offscreen = true;
             }
-            else if(dirX > 0 && posX > offscreenX)
+            else if (dirX > 0 && posX > offscreenX)
             {
                 offscreen = true;
             }
@@ -55,7 +68,7 @@ public class DestroyOffscreen : MonoBehaviour
                 offscreen = false;
             }
 
-            if(offscreen)
+            if (offscreen)
             {
                 OnOutOfBounds();
             }
@@ -68,7 +81,7 @@ public class DestroyOffscreen : MonoBehaviour
         // reseting offscreen value
         GameObjetcUtil.Destroy(gameObject);
 
-        if(DestroyCallback != null) 
+        if (DestroyCallback != null)
         {
             // meaning a method has been set to this property
             // we attempt to calll the method thast connected to it
