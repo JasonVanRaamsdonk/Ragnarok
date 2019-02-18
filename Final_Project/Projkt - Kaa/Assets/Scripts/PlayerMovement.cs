@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is used for physics simulations
     void FixedUpdate()
     {
-        movement = Input.GetAxis("Horizontal");
+        movement = Input.GetAxis("Player 1 - Horizontal");
         if (movement != 0)
         {
             rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4383734101329353948}
   - component: {fileID: 4859214599274148952}
   - component: {fileID: 5690483334900281794}
+  - component: {fileID: 1841082427224540849}
   m_Layer: 0
   m_Name: QuickFireProjectile
   m_TagString: Untagged
@@ -177,3 +178,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   target: {fileID: 0}
+--- !u!114 &1841082427224540849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539340597454853359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a858da94603124da068cfee2aecbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  speed: 20
+  rb: {fileID: 4859214599274148952}
+  impactEffect: {fileID: 0}

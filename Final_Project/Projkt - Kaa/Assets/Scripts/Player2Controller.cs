@@ -31,8 +31,8 @@ public class Player2Controller : MonoBehaviour
     void Update()
     {
         // get input of vertical and horizontal axis
-        VerticalMotion = Input.GetAxis("Vertical");
-        HorizontailMotion = Input.GetAxis("Horizontal");
+        VerticalMotion = Input.GetAxis("Player 2 - Vertical");
+        HorizontailMotion = Input.GetAxis("Player 2 - Horizontal");
 
         // give crosshair a new vector multiplied by CrosshairSpeed
         Crosshair.velocity = new Vector2(HorizontailMotion * CrosshairSpeed, VerticalMotion * CrosshairSpeed);
