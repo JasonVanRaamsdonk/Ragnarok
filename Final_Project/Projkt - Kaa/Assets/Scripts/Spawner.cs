@@ -16,6 +16,7 @@ public class Spawner : MonoBehaviour
     {
         ResetDelay();
         StartCoroutine(EnemyGenerator());
+        
     }
      
     IEnumerator EnemyGenerator()    // to return an interface of Ienumerator
