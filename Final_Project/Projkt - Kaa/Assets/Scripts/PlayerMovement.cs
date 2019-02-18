@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Also make sure collision detection mode is set to continuous
     public int speed; // speed variable used for movement
     public float fallMultiplier = 2.50f; // fall multiplier for high jumps
     public float lowMultiplier = 2.00f; // fall multiplier for low jumps
@@ -24,17 +22,18 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         extraJumps = extraJumpsValue;
-        rb2d = GetComponent<Rigidbody2D>(); 
-    }
-
-     void Awake() {
-        string[] names = Input.GetJoystickNames();
-        Debug.Log("Controllers Connected: " + names.Length); // This shows as 0
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // FixedUpdate is used for physics simulations
     void FixedUpdate()
     {
+        movement = Input.GetAxis("Player 1 - Horizontal");
+        if (movement != 0)
+        {
+            rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
+        }
+
         animator.SetFloat("speed", movement*movement); // changes the animation of the sprite to running
 
         // invert the sprites image to simulate turning left and right
@@ -50,12 +49,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        movement = Input.GetAxis("Player 1 - Horizontal");
-        if (movement != 0 )
-        {
-            rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
-        }
-
         //jumping mechanism to simulate a more retro game like gravity
         if (rb2d.velocity.y < 0) // if the player is falling down it will increase the gravity
         {
@@ -65,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowMultiplier - 1) * Time.deltaTime;
         }
+
         if (IsGrounded()) // set jumpValue when the player is grounded
         {
             extraJumps = extraJumpsValue;
@@ -73,7 +67,9 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.velocity = Vector2.up * jumpForce;
             extraJumps--;
-        }else if (Input.GetButtonDown("Jump") && (extraJumps == 0) && IsGrounded()){
+        }
+        else if (Input.GetButtonDown("Jump") && (extraJumps == 0) && IsGrounded())
+        {
             rb2d.velocity = Vector2.up * jumpForce;
         }
 
@@ -109,10 +105,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Equals("platforms(Clone)")) 
+        if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(transform);
-            GetComponent<Renderer>().material.color = Color.green;
         }
     }
 
@@ -121,7 +116,6 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(null); 
-            GetComponent<Renderer>().material.color = Color.white;
         }
     }
 

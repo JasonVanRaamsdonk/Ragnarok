@@ -46,6 +46,8 @@ public class RecycleGameObject : MonoBehaviour
         foreach(var component in recycleComponents)
         {
             component.Restart();
+            
+            GetComponent<Renderer>().material.color = Color.white;
         }
     }
 

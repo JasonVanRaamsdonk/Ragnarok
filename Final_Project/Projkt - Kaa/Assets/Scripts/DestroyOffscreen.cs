@@ -29,6 +29,11 @@ public class DestroyOffscreen : MonoBehaviour
         {
             OnOutOfBounds();
         }
+
+        if ( health <= 50)
+        {
+            GetComponent<Renderer>().material.color = Color.red;
+        }
     }
 
     // Start is called before the first frame update
@@ -78,6 +83,8 @@ public class DestroyOffscreen : MonoBehaviour
     public void OnOutOfBounds()
     {
         offscreen = false;
+        health = 100;
+        
         // reseting offscreen value
         GameObjetcUtil.Destroy(gameObject);
 

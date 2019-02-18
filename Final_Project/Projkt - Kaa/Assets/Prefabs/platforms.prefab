@@ -113,6 +113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 32
+  health: 100
+  deathEffect: {fileID: 0}
 --- !u!114 &8750152625745719182
 MonoBehaviour:
   m_ObjectHideFlags: 0
