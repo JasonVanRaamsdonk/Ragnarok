@@ -31,7 +31,7 @@ public class DestroyPowerUp : MonoBehaviour
 
         // offscreenX = (Screen.width / PixelPerfectCamera.pixelsToUnits)/2 + offset;
 
-        offscreenX = 11;
+        offscreenX = 14;
         offscreenY = 7;
 
         //even though we foind the halfway position of the screen we're still goinmg to take 
