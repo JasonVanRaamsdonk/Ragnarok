@@ -119,13 +119,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("PowerUp") )
-        {
-            col.gameObject.SetActive(false);
-        }
-        
-    }
-
 }
