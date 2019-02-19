@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,10 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1873598619
+    locked: 0
+  - name: PowerUp
+    uniqueID: 3515478557
+    locked: 0
+  - name: Player
+    uniqueID: 403796829
     locked: 0
