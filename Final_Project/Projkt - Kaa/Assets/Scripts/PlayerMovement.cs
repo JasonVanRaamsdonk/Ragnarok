@@ -59,6 +59,13 @@ public class PlayerMovement : MonoBehaviour
             rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowMultiplier - 1) * Time.deltaTime;
         }
 
+        //the player can't go out of the right screen view 
+        if (this.transform.position.x > 8.20)
+        {
+            float posy = this.transform.position.y;
+            this.transform.position = new Vector3(8.20f, posy, 0);
+        }
+
         if (IsGrounded()) // set jumpValue when the player is grounded
         {
             extraJumps = extraJumpsValue;
