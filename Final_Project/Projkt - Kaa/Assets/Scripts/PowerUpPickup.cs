@@ -32,7 +32,7 @@ public class PowerUpPickup : MonoBehaviour
         
         if (col.gameObject.name.Equals("JumpUpgrade_01(Clone)"))
         {
-           this.gameObject.SetActive(false); 
+           col.gameObject.SetActive(false); 
         }
     }
 

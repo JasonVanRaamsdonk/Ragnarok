@@ -102,10 +102,6 @@ public class PlayerMovement : MonoBehaviour
         {
             return true;
         }
-        if (!onPlatformStay)
-        {
-            return false;
-        }
         return false;
     }
 
@@ -122,7 +118,6 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(transform);
-            onPlatformStay = false;
         }
     }
 
@@ -130,10 +125,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.name.Equals("platforms(Clone)") && movement < 0 )
         {
-            Debug.Log("Staying");
             float offset = Mathf.Abs(this.rb2d.velocity.x - collision.rigidbody.velocity.x);
             rb2d.velocity = new Vector2(-offset * 2.70f, rb2d.velocity.y);
-            onPlatformStay = true;
         }
     }
 
@@ -142,7 +135,6 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(null); 
-            onPlatformStay = false;
         }
     }
 
