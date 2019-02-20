@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
             rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
         }
 
-        animator.SetFloat("speed", movement*movement); // changes the animation of the sprite to running
+        animator.SetFloat("speed", Mathf.Abs(movement)); // changes the animation of the sprite to running
 
         // invert the sprites image to simulate turning left and right
         if (movement > 0f && !facingRight) // if not looking right... look right
@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         {
             extraJumps = extraJumpsValue;
         }
+        
         if (Input.GetButtonDown("Jump") && extraJumps > 0) // jump mechanism
         {
             rb2d.velocity = Vector2.up * jumpForce;
@@ -103,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = Scaler;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // when player gets on the platform
     {
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
@@ -111,11 +112,33 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision) // when the player stays on the platform
+    {
+        if (collision.gameObject.name.Equals("platforms(Clone)") && movement < 0 )
+        {
+            float offset = Mathf.Abs(this.rb2d.velocity.x - collision.rigidbody.velocity.x);
+            rb2d.velocity = (Vector2.left * offset * 2.70f);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision) // when player leaves the platform
     {
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(null); 
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col) 
+    {
+        if (col.gameObject.name.Equals("JumpUpgrade_01(Clone)")) // when player touches jumpUpgrade
+        {
+            // do something
+        }
+
+        if (col.gameObject.name.Equals("PotionUpgrade(Clone)")) // when player touches potionUpgrade
+        {
+            // do something
         }
     }
 

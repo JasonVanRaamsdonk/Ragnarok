@@ -594,7 +594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325224489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8558192, y: -5.101688, z: -0.24839282}
+  m_LocalPosition: {x: 2.9, y: -6.18, z: -0.24839282}
   m_LocalScale: {x: 1.3420337, y: 0.9433325, z: 1}
   m_Children: []
   m_Father: {fileID: 1110651353}
@@ -651,10 +651,10 @@ PolygonCollider2D:
       - {x: -0.10923462, y: -0.010039806}
       - {x: -0.10751696, y: -0.11854868}
       - {x: -0.07236376, y: -0.15856862}
-      - {x: 0.050717928, y: -0.16168627}
-      - {x: 0.05226803, y: -0.15646169}
-      - {x: 0.077174, y: -0.10207026}
-      - {x: 0.072669886, y: 0.04566598}
+      - {x: 0.079397015, y: -0.15951356}
+      - {x: 0.005331707, y: -0.12822294}
+      - {x: 0.077174, y: -0.15848415}
+      - {x: 0.07006617, y: 0.050005518}
 --- !u!50 &401945440
 Rigidbody2D:
   serializedVersion: 4
@@ -958,7 +958,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.1371603
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1951,7 +1951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088220749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9658194, y: -4.1116877, z: -0.24839282}
+  m_LocalPosition: {x: 2.9658194, y: -4.62, z: -0.24839282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1110651353}
