@@ -20,7 +20,7 @@ public class PowerUpPickup : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().gravityScale = 0.0f;
             GetComponent<Rigidbody2D>().velocity = col.GetComponent<Rigidbody2D>().velocity; 
-            GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 0.63f);
+            GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 0.7f);
         }
 
         if (col.gameObject.name.Equals("Player 1"))
