@@ -869,7 +869,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 256
-  rayDistance: 1.3
+  rayDistance: 1
   extraJumpsValue: 2
   animator: {fileID: 401945441}
 --- !u!1 &425723902

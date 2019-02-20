@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float lowMultiplier = 2.00f; // fall multiplier for low jumps
     public float jumpForce = 8.00f; // velocity when jumping 
     public LayerMask Ground; // used for setting up a raycast, put all tiles into a layer called Ground
-    public float rayDistance = 1.3f; // used for setting ray length which will determine the distance from when player can jump
+    public float rayDistance = 1f; // used for setting ray length which will determine the distance from when player can jump
     public int extraJumpsValue; // how many jumps the player can have before grounding 
     public Animator animator;
 
@@ -17,12 +17,14 @@ public class PlayerMovement : MonoBehaviour
     private bool facingRight = true; // flag if the player is facing right
     private Rigidbody2D rb2d; // shorthand for <rigidbody2d>
     private float movement = 0f; // used for storing movement 
+    private bool onPlatformStay;
 
     // Start is called before the first frame update
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb2d = GetComponent<Rigidbody2D>();
+        onPlatformStay = false;
     }
 
     // FixedUpdate is used for physics simulations
@@ -100,6 +102,10 @@ public class PlayerMovement : MonoBehaviour
         {
             return true;
         }
+        if (!onPlatformStay)
+        {
+            return false;
+        }
         return false;
     }
 
@@ -116,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(transform);
+            onPlatformStay = false;
         }
     }
 
@@ -123,8 +130,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.name.Equals("platforms(Clone)") && movement < 0 )
         {
+            Debug.Log("Staying");
             float offset = Mathf.Abs(this.rb2d.velocity.x - collision.rigidbody.velocity.x);
-            rb2d.velocity = (Vector2.left * offset * 2.70f);
+            rb2d.velocity = new Vector2(-offset * 2.70f, rb2d.velocity.y);
+            onPlatformStay = true;
         }
     }
 
@@ -133,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(null); 
+            onPlatformStay = false;
         }
     }
 
