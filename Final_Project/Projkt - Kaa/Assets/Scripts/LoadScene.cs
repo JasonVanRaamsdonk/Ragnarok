@@ -15,11 +15,11 @@ public class LoadScene : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        this.GetComponentInChildren<Text>().color = Color.white;
+        this.GetComponentInChildren<Text>().color = Color.green;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        this.GetComponentInChildren<Text>().color = Color.green;
+        this.GetComponentInChildren<Text>().color = Color.red;
     }
 }
