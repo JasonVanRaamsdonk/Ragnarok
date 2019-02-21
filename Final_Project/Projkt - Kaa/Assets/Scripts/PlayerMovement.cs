@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float lowMultiplier = 2.00f; // fall multiplier for low jumps
     public float jumpForce = 8.00f; // velocity when jumping 
     public LayerMask Ground; // used for setting up a raycast, put all tiles into a layer called Ground
-    public float rayDistance = 1f; // used for setting ray length which will determine the distance from when player can jump
     public int extraJumpsValue; // how many jumps the player can have before grounding 
     public Animator animator;
 
@@ -17,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private bool facingRight = true; // flag if the player is facing right
     private Rigidbody2D rb2d; // shorthand for <rigidbody2d>
     private float movement = 0f; // used for storing movement 
+    private bool hitPlatformTrigger = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +33,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
         }
-
+        if (movement == 0 && transform.parent)
+        {
+            rb2d.velocity = new Vector2(0,rb2d.velocity.y);
+        }
+        
         animator.SetFloat("speed", Mathf.Abs(movement)); // changes the animation of the sprite to running
 
         // invert the sprites image to simulate turning left and right
@@ -76,10 +80,10 @@ public class PlayerMovement : MonoBehaviour
             rb2d.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
-        else if (Input.GetButtonDown("Jump") && (extraJumps == 0) && IsGrounded())
-        {
-            rb2d.velocity = Vector2.up * jumpForce;
-        }
+        // else if (Input.GetButtonDown("Jump") && (extraJumps == 0) && IsGrounded())
+        // {
+        //     rb2d.velocity = Vector2.up * jumpForce;
+        // }
 
 
         // just a fun piece of code. It changes the color of the player when the " " key pressed
@@ -95,8 +99,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool IsGrounded() // check if the player is touching the ground
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, Ground);
-        if (hit.collider != null)
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.8f, Ground);
+        if (hit.collider != null && !hitPlatformTrigger)
         {
             return true;
         }
@@ -117,15 +121,7 @@ public class PlayerMovement : MonoBehaviour
         {
             this.transform.SetParent(transform);
         }
-    }
-
-    void OnCollisionStay2D(Collision2D collision) // when the player stays on the platform
-    {
-        if (collision.gameObject.name.Equals("platforms(Clone)") && movement < 0 )
-        {
-            float offset = Mathf.Abs(this.rb2d.velocity.x - collision.rigidbody.velocity.x);
-            rb2d.velocity = new Vector2(-offset * 2.70f, rb2d.velocity.y);
-        }
+         hitPlatformTrigger = false;
     }
 
     private void OnCollisionExit2D(Collision2D collision) // when player leaves the platform
@@ -133,6 +129,15 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.name.Equals("platforms(Clone)"))
         {
             this.transform.SetParent(null); 
+            hitPlatformTrigger = true;
+        }  
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "PlatformIsTrigger")
+        {
+            hitPlatformTrigger = true;
         }
     }
 }

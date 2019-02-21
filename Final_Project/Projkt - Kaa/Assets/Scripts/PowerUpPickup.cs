@@ -13,8 +13,6 @@ public class PowerUpPickup : MonoBehaviour
     }
 
 	void Update () {
-        //transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime * 2); // come on guys!! I like it... Vlad
-
         // onTriggerExit() workaround since it doesnt recognise when an object is destroyed
         if ( triggered && !col.gameObject.activeSelf) // if trigger; powerup landed, and platform collider properties are off
         {
@@ -31,7 +29,7 @@ public class PowerUpPickup : MonoBehaviour
             this.col = col; // give player.collision the platform.collision properties
             GetComponent<Rigidbody2D>().gravityScale = 0.0f; // powerup has no gravity
             GetComponent<Rigidbody2D>().velocity = col.GetComponent<Rigidbody2D>().velocity; // powerup follows platform
-            GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 0.6f); // powerup is just above platform
+            GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 1); // powerup is just above platform
         }
 
         // deactivate powerup when touching player1
