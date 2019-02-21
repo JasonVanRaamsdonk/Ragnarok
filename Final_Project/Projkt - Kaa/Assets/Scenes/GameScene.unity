@@ -879,14 +879,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e83eb16b953c54ab9c32d445efc89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   fallMultiplier: 3
   lowMultiplier: 2.5
   jumpForce: 18
   Ground:
     serializedVersion: 2
     m_Bits: 256
-  rayDistance: 1.3
   extraJumpsValue: 2
   animator: {fileID: 401945441}
 --- !u!114 &401945445
@@ -1382,6 +1381,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 887819113902865138, guid: b96d304c8574eb646be4e3393d5049d0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b96d304c8574eb646be4e3393d5049d0, type: 3}
