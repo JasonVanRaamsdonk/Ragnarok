@@ -19,6 +19,7 @@ public class SnakeHeadMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //make snake head move in a circular fasion
         angle += MovementSpeed * Time.deltaTime;
 
         var offset = new Vector2(Mathf.Sin(angle) * MovementRadius, Mathf.Cos(angle));

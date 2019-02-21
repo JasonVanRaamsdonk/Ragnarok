@@ -18,6 +18,7 @@ public class Player2Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // play area boundary variables
         minX = -maxX;
         minY = -maxY;
 
@@ -37,6 +38,7 @@ public class Player2Controller : MonoBehaviour
         // give crosshair a new vector multiplied by CrosshairSpeed
         Crosshair.velocity = new Vector2(HorizontailMotion * CrosshairSpeed, VerticalMotion * CrosshairSpeed);
 
+        // keep the cross hair in the play area boundary
         Crosshair.position = new Vector2(Mathf.Clamp(Crosshair.position.x, minX, maxX), Mathf.Clamp(Crosshair.position.y, minY, maxY));
 
     }

@@ -18,11 +18,13 @@ public class Player1Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if player health is too high
         if (Health > 3)
         {
             Health = 3;
         }
 
+        // change player health bar depending on current health
         if (Health == 3)
         {
             spriteRenderer.sprite = sprites[0];
@@ -35,7 +37,7 @@ public class Player1Health : MonoBehaviour
         {
             spriteRenderer.sprite = sprites[2];
         }
-        else if (Health == 0)
+        else if (Health <= 0)
         {
             spriteRenderer.sprite = sprites[3];
         }

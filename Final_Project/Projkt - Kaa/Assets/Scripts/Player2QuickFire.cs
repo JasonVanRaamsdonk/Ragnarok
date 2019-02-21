@@ -36,17 +36,21 @@ public class Player2QuickFire : MonoBehaviour
 
                 // testing input
                 Debug.Log("Button B Pressed");
+
+                // calculate next ability activate time
                 NextAtivateTime = Time.time + Ability1Cooldown;
 
                 // Start animation and mouthfiring
                 SnakeHeadAnimator.SetBool("OnMouthFire", true);
                 StartCoroutine(MouthFireAnimation());
+
             }
             else if (Input.GetButton("Fire2"))
             {
                 // testing input
                 Debug.Log("Button X Pressed");
 
+                // calculate next ability activate time
                 NextAtivateTime = Time.time + QuickFireCooldown;
 
                 Debug.Log("Starting QuickFire Shots");
@@ -61,6 +65,8 @@ public class Player2QuickFire : MonoBehaviour
             {
                 // testing input
                 Debug.Log("Button Y Pressed");
+
+                // calculate next ability activate time
                 NextAtivateTime = Time.time + Ability2Cooldown;
 
                 // start animation and firing
@@ -78,25 +84,32 @@ public class Player2QuickFire : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         Rigidbody2D ProjectileClone1 = (Rigidbody2D) Instantiate(projectile, QuickShootOrigin.position, QuickShootOrigin.rotation);
+        // send target location to projectile clone
         ProjectileClone1.GetComponent<QuickProjectileMotion>().target = Target;
+
         yield return new WaitForSeconds(0.5f);
 
         Rigidbody2D ProjectileClone2 = (Rigidbody2D) Instantiate(projectile, QuickShootOrigin.position, QuickShootOrigin.rotation);
         ProjectileClone2.GetComponent<QuickProjectileMotion>().target = Target;
+
         yield return new WaitForSeconds(0.5f);
 
         Rigidbody2D ProjectileClone3 = (Rigidbody2D) Instantiate(projectile, QuickShootOrigin.position, QuickShootOrigin.rotation);
         ProjectileClone3.GetComponent<QuickProjectileMotion>().target = Target;
+
         yield return new WaitForSeconds(0.5f);
 
         Rigidbody2D ProjectileClone4 = (Rigidbody2D) Instantiate(projectile, QuickShootOrigin.position, QuickShootOrigin.rotation);
         ProjectileClone4.GetComponent<QuickProjectileMotion>().target = Target;
+
         yield return new WaitForSeconds(0.5f);
 
+        // turn snake animation off
         SnakeHeadAnimator.SetBool("OnQuickFire", false);
 
     }
 
+    // start snake head animation
     IEnumerator MouthFireAnimation()
     {
         yield return new WaitForSeconds(1.4f);
