@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PowerUpPickup : MonoBehaviour
 {
+   bool triggered = false; // trigger for when powerup lands on platform
+   Collider2D col;
    void start()
     {
         gameObject.SetActive(true);
@@ -11,38 +13,48 @@ public class PowerUpPickup : MonoBehaviour
     }
 
 	void Update () {
-        transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime * 2);	
+        //transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime * 2); // come on guys!! I like it... Vlad
+
+        // onTriggerExit() workaround since it doesnt recognise when an object is destroyed
+        if ( triggered && !col.gameObject.activeSelf) // if trigger; powerup landed, and platform collider properties are off
+        {
+           this.GetComponent<Rigidbody2D>().gravityScale = 0.5f; // when platform is destroyed, power up can fall
+        }      	
 	}
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        // if powerup touches the platform
         if (col.gameObject.name.Equals("platforms(Clone)"))
         {
-            GetComponent<Rigidbody2D>().gravityScale = 0.0f;
-            GetComponent<Rigidbody2D>().velocity = col.GetComponent<Rigidbody2D>().velocity; 
-            GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 0.7f);
+            triggered = true; // powerup landed on platform
+            this.col = col; // give player.collision the platform.collision properties
+            GetComponent<Rigidbody2D>().gravityScale = 0.0f; // powerup has no gravity
+            GetComponent<Rigidbody2D>().velocity = col.GetComponent<Rigidbody2D>().velocity; // powerup follows platform
+            GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 0.6f); // powerup is just above platform
         }
 
+        // deactivate powerup when touching player1
         if (col.gameObject.name.Equals("Player 1"))
-            { // Jason to add a recycling function
-                //GameObjetcUtil.Destroy(gameObject);
-                //this.gameObject.SetActive(false);
-                this.GetComponent<DestroyPowerUp>().OnOutOfBounds();
+            {
+                this.gameObject.SetActive(false);
             }
         
-        if (col.gameObject.name.Equals("JumpUpgrade_01(Clone)"))
+
+        // power up integration in the code below please!!!!!!!!!!!11 ////////////////////////////////////////////
+
+        // when player touches jumpUpgrade
+        if (this.gameObject.name.Equals("PotionUpgrade(Clone)") && col.gameObject.name.Equals("Player 1"))
         {
-           col.gameObject.SetActive(false); 
+            // do something 
+            col.GetComponent<Renderer>().material.color = Color.red;
+        }
+
+        // when player touches jumpUpgrade
+        if (this.gameObject.name.Equals("JumpUpgrade_01(Clone)") && col.gameObject.name.Equals("Player 1"))
+        {
+            // do something
+            col.GetComponent<Renderer>().material.color = Color.blue;
         }
     }
-
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.name.Equals("platforms(Clone)"))
-        {
-            this.GetComponent<Rigidbody2D>().gravityScale = 0.5f;
-        }
-    }
-
 }
-
