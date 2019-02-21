@@ -85,7 +85,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playerIdle
+  m_Name: Player 1 Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -99,7 +99,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c82bba06197cc9546a68ab37dae09bbe, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4fa51f11da5340b4fa3f889ee9081b81, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -112,7 +112,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playerRun
+  m_Name: Player 1 Run
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -126,7 +126,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2066c3142ba3abe4ab88ba79f17da7da, type: 2}
+  m_Motion: {fileID: 7400000, guid: 73002d1054030a9458babcac25c0d1fa, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
