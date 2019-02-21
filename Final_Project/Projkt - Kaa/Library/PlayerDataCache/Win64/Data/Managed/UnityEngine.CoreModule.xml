@@ -12755,8 +12755,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be rendered in the given camera only.</param>
       <param name="submeshIndex">Which subset of the mesh to draw. This applies only to meshes that are composed of several materials.</param>
       <param name="properties">Additional material properties to apply onto material just before this mesh will be drawn. See MaterialPropertyBlock.</param>
-      <param name="castShadows">Should the mesh cast shadows?</param>
-      <param name="receiveShadows">Should the mesh receive shadows?</param>
+      <param name="castShadows">Determines whether the mesh can cast shadows.</param>
+      <param name="receiveShadows">Determines whether the mesh can receive shadows.</param>
       <param name="useLightProbes">Should the mesh use light probes?</param>
       <param name="probeAnchor">If used, the mesh will use this Transform's position to sample light probes and find the matching reflection probe.</param>
       <param name="lightProbeUsage">LightProbeUsage for the mesh.</param>
@@ -12775,8 +12775,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be rendered in the given camera only.</param>
       <param name="submeshIndex">Which subset of the mesh to draw. This applies only to meshes that are composed of several materials.</param>
       <param name="properties">Additional material properties to apply onto material just before this mesh will be drawn. See MaterialPropertyBlock.</param>
-      <param name="castShadows">Should the mesh cast shadows?</param>
-      <param name="receiveShadows">Should the mesh receive shadows?</param>
+      <param name="castShadows">Determines whether the mesh can cast shadows.</param>
+      <param name="receiveShadows">Determines whether the mesh can receive shadows.</param>
       <param name="useLightProbes">Should the mesh use light probes?</param>
       <param name="probeAnchor">If used, the mesh will use this Transform's position to sample light probes and find the matching reflection probe.</param>
       <param name="lightProbeUsage">LightProbeUsage for the mesh.</param>
@@ -12795,8 +12795,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be rendered in the given camera only.</param>
       <param name="submeshIndex">Which subset of the mesh to draw. This applies only to meshes that are composed of several materials.</param>
       <param name="properties">Additional material properties to apply onto material just before this mesh will be drawn. See MaterialPropertyBlock.</param>
-      <param name="castShadows">Should the mesh cast shadows?</param>
-      <param name="receiveShadows">Should the mesh receive shadows?</param>
+      <param name="castShadows">Determines whether the mesh can cast shadows.</param>
+      <param name="receiveShadows">Determines whether the mesh can receive shadows.</param>
       <param name="useLightProbes">Should the mesh use light probes?</param>
       <param name="probeAnchor">If used, the mesh will use this Transform's position to sample light probes and find the matching reflection probe.</param>
       <param name="lightProbeUsage">LightProbeUsage for the mesh.</param>
@@ -12815,8 +12815,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be rendered in the given camera only.</param>
       <param name="submeshIndex">Which subset of the mesh to draw. This applies only to meshes that are composed of several materials.</param>
       <param name="properties">Additional material properties to apply onto material just before this mesh will be drawn. See MaterialPropertyBlock.</param>
-      <param name="castShadows">Should the mesh cast shadows?</param>
-      <param name="receiveShadows">Should the mesh receive shadows?</param>
+      <param name="castShadows">Determines whether the mesh can cast shadows.</param>
+      <param name="receiveShadows">Determines whether the mesh can receive shadows.</param>
       <param name="useLightProbes">Should the mesh use light probes?</param>
       <param name="probeAnchor">If used, the mesh will use this Transform's position to sample light probes and find the matching reflection probe.</param>
       <param name="lightProbeUsage">LightProbeUsage for the mesh.</param>
@@ -12835,8 +12835,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be rendered in the given camera only.</param>
       <param name="submeshIndex">Which subset of the mesh to draw. This applies only to meshes that are composed of several materials.</param>
       <param name="properties">Additional material properties to apply onto material just before this mesh will be drawn. See MaterialPropertyBlock.</param>
-      <param name="castShadows">Should the mesh cast shadows?</param>
-      <param name="receiveShadows">Should the mesh receive shadows?</param>
+      <param name="castShadows">Determines whether the mesh can cast shadows.</param>
+      <param name="receiveShadows">Determines whether the mesh can receive shadows.</param>
       <param name="useLightProbes">Should the mesh use light probes?</param>
       <param name="probeAnchor">If used, the mesh will use this Transform's position to sample light probes and find the matching reflection probe.</param>
       <param name="lightProbeUsage">LightProbeUsage for the mesh.</param>
@@ -12887,8 +12887,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="bufferWithArgs">The GPU buffer containing the arguments for how many instances of this mesh to draw.</param>
       <param name="argsOffset">The byte offset into the buffer, where the draw arguments start.</param>
       <param name="properties">Additional material properties to apply. See MaterialPropertyBlock.</param>
-      <param name="castShadows">Should the mesh cast shadows?</param>
-      <param name="receiveShadows">Should the mesh receive shadows?</param>
+      <param name="castShadows">Determines whether the mesh can cast shadows.</param>
+      <param name="receiveShadows">Determines whether the mesh can receive shadows.</param>
       <param name="layer"> to use.</param>
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be drawn in the given camera only.</param>
       <param name="lightProbeUsage">LightProbeUsage for the instances.</param>
@@ -29309,6 +29309,7 @@ A Scene may be invalid if, for example, you tried to open a Scene that does not 
       <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
       <param name="sceneName">Name or path of the Scene to unload.</param>
       <param name="scene">Scene to unload.</param>
+      <param name="options">Scene unloading options.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
       </returns>
@@ -29320,6 +29321,7 @@ A Scene may be invalid if, for example, you tried to open a Scene that does not 
       <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
       <param name="sceneName">Name or path of the Scene to unload.</param>
       <param name="scene">Scene to unload.</param>
+      <param name="options">Scene unloading options.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
       </returns>
@@ -29331,6 +29333,43 @@ A Scene may be invalid if, for example, you tried to open a Scene that does not 
       <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
       <param name="sceneName">Name or path of the Scene to unload.</param>
       <param name="scene">Scene to unload.</param>
+      <param name="options">Scene unloading options.</param>
+      <returns>
+        <para>Use the AsyncOperation to determine if the operation has completed.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(System.Int32,UnityEngine.SceneManagement.UnloadSceneOptions)">
+      <summary>
+        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+      </summary>
+      <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
+      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="scene">Scene to unload.</param>
+      <param name="options">Scene unloading options.</param>
+      <returns>
+        <para>Use the AsyncOperation to determine if the operation has completed.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(System.String,UnityEngine.SceneManagement.UnloadSceneOptions)">
+      <summary>
+        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+      </summary>
+      <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
+      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="scene">Scene to unload.</param>
+      <param name="options">Scene unloading options.</param>
+      <returns>
+        <para>Use the AsyncOperation to determine if the operation has completed.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.UnloadSceneOptions)">
+      <summary>
+        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+      </summary>
+      <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
+      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="scene">Scene to unload.</param>
+      <param name="options">Scene unloading options.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
       </returns>
@@ -29357,6 +29396,24 @@ A Scene may be invalid if, for example, you tried to open a Scene that does not 
       <returns>
         <para>Scene path (e.g "AssetsScenesScene1.unity").</para>
       </returns>
+    </member>
+    <member name="T:UnityEngine.SceneManagement.UnloadSceneOptions">
+      <summary>
+        <para>Scene unloading options passed to SceneManager.UnloadScene.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.SceneManagement.UnloadSceneOptions.None">
+      <summary>
+        <para>Unload scene without any special options.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.SceneManagement.UnloadSceneOptions.UnloadAllEmbeddedSceneObjects">
+      <summary>
+        <para>Unloads all objects which were loaded from the scene's serialized file. Without this flag, only GameObject and Components within the scene's hierarchy will be unloaded.
+
+Note: Objects that are dynamically created during the build process can be embedded in the scene's serialized file. This can occur is when asset types are created and referenced inside the scene's post-processor callback. Some examples of these types are textures, meshes, and scriptable objects. Assets from your assets folder will not be embedded in the scene's serialized file.
+Note: This flag will not unload assets which can be referenced by other scenes.</para>
+      </summary>
     </member>
     <member name="T:UnityEngine.Screen">
       <summary>
