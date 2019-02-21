@@ -17,14 +17,12 @@ public class PlayerMovement : MonoBehaviour
     private bool facingRight = true; // flag if the player is facing right
     private Rigidbody2D rb2d; // shorthand for <rigidbody2d>
     private float movement = 0f; // used for storing movement 
-    private bool onPlatformStay;
 
     // Start is called before the first frame update
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb2d = GetComponent<Rigidbody2D>();
-        onPlatformStay = false;
     }
 
     // FixedUpdate is used for physics simulations
@@ -137,18 +135,4 @@ public class PlayerMovement : MonoBehaviour
             this.transform.SetParent(null); 
         }
     }
-
-    void OnTriggerEnter2D(Collider2D col) 
-    {
-        if (col.gameObject.name.Equals("JumpUpgrade_01(Clone)")) // when player touches jumpUpgrade
-        {
-            // do something
-        }
-
-        if (col.gameObject.name.Equals("PotionUpgrade(Clone)")) // when player touches potionUpgrade
-        {
-            // do something
-        }
-    }
-
 }
