@@ -12,6 +12,14 @@ public class Player2QuickFire : MonoBehaviour
     public Transform QuickShootOrigin;
     public GameObject Target;
 
+    // fireball projectiles
+    public Rigidbody2D FireballProjectile;
+    public Transform FireballOrigin;
+
+    // Snake Tail
+    public Rigidbody2D Tail;
+    public Transform TailOrigin;
+
     // Cooldown
     public float QuickFireCooldown;
     public float Ability1Cooldown;
@@ -40,9 +48,7 @@ public class Player2QuickFire : MonoBehaviour
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Ability1Cooldown;
 
-                // Start animation and mouthfiring
-                SnakeHeadAnimator.SetBool("OnMouthFire", true);
-                StartCoroutine(MouthFireAnimation());
+                Rigidbody2D SnakeTailClone = (Rigidbody2D)Instantiate(Tail, TailOrigin.position, TailOrigin.rotation);
 
             }
             else if (Input.GetButton("Fire2"))
@@ -57,7 +63,7 @@ public class Player2QuickFire : MonoBehaviour
 
                 // starting QuickFireAnimation
                 SnakeHeadAnimator.SetBool("OnQuickFire", true);
-                //start Firing Coroutine
+                // start Firing Coroutine
                 StartCoroutine(QuickFireAnimation());
 
             }
@@ -69,9 +75,12 @@ public class Player2QuickFire : MonoBehaviour
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Ability2Cooldown;
 
+                Debug.Log("Starting Fireball shot");
+
                 // start animation and firing
                 SnakeHeadAnimator.SetBool("OnMouthFire", true);
-                StartCoroutine(MouthFireAnimation());
+                // start firing Corountine 
+                StartCoroutine(FireballAnimation());
 
             }
         }
@@ -110,11 +119,12 @@ public class Player2QuickFire : MonoBehaviour
     }
 
     // start snake head animation
-    IEnumerator MouthFireAnimation()
+    IEnumerator FireballAnimation()
     {
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(0.4f);
+        Rigidbody2D FireballClone = (Rigidbody2D)Instantiate(FireballProjectile, FireballOrigin.position, FireballOrigin.rotation);
+
+        yield return new WaitForSeconds(1.0f);
         SnakeHeadAnimator.SetBool("OnMouthFire", false);
-
-
     }
 }
