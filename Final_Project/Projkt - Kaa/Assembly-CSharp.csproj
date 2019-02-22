@@ -742,6 +742,7 @@
     <Compile Include="Assets\Scripts\CollisionTrigger.cs" />
     <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
     <Compile Include="Assets\Scripts\DestroyPowerUp.cs" />
+    <Compile Include="Assets\Scripts\FireballProjectile.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameObjetcUtil.cs" />
     <Compile Include="Assets\Scripts\InputState.cs" />
@@ -765,6 +766,7 @@
     <Compile Include="Assets\Scripts\SnakeBodyMotion.cs" />
     <Compile Include="Assets\Scripts\SnakeHeadMotion.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Tail.cs" />
     <Compile Include="Assets\Scripts\TiledBackground.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
