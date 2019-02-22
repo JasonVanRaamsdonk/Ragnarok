@@ -10,7 +10,7 @@ public class PlayerRespawning : MonoBehaviour
     public Rigidbody2D SpawnPlatform;
     public Transform PlatformSpawnPoint;
     public GameObject HealthBar;
-    Collider2D col;
+    private Collider2D col;
 
     // Start is called before the first frame update
     void Start()
