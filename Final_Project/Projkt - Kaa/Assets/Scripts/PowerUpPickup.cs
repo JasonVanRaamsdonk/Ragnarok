@@ -32,27 +32,50 @@ public class PowerUpPickup : MonoBehaviour
             GetComponent<Rigidbody2D>().position = col.GetComponent<Rigidbody2D>().position + new Vector2(0, 1); // powerup is just above platform
         }
 
-        // deactivate powerup when touching player1
-        if (col.gameObject.name.Equals("Player 1"))
-            {
-                this.gameObject.SetActive(false);
-            }
-        
-
-        // power up integration in the code below please!!!!!!!!!!!11 ////////////////////////////////////////////
-
-        // when player touches jumpUpgrade
+        // when player touches potionUpgrade
         if (this.gameObject.name.Equals("PotionUpgrade(Clone)") && col.gameObject.name.Equals("Player 1"))
         {
-            // do something 
-            col.GetComponent<Renderer>().material.color = Color.red;
+            //get life if not 3 
+            if (GameObject.Find("Player1HealthBar").GetComponent<Player1Health>().Health < 4)
+            {
+                GameObject.Find("Player1HealthBar").GetComponent<Player1Health>().Health++;
+                this.GetComponent<CircleCollider2D>().enabled = false;
+                this.GetComponent<SpriteRenderer>().enabled = false;
+            }
+
         }
 
         // when player touches jumpUpgrade
         if (this.gameObject.name.Equals("JumpUpgrade_01(Clone)") && col.gameObject.name.Equals("Player 1"))
         {
             // do something
-            col.GetComponent<Renderer>().material.color = Color.blue;
+            StartCoroutine(waitTime());
+
         }
+
+        IEnumerator waitTime()
+        {
+            GameObject.Find("Player 1").GetComponent<PlayerMovement>().extraJumpsValue = 3;
+
+            this.GetComponent<CircleCollider2D>().enabled = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
+
+            yield return new WaitForSecondsRealtime(3);
+            col.GetComponent<Renderer>().material.color = Color.blue;
+            yield return new WaitForSeconds(0.5f);
+            col.GetComponent<Renderer>().material.color = Color.red;
+            yield return new WaitForSeconds(0.5f);
+            col.GetComponent<Renderer>().material.color = Color.blue;
+            yield return new WaitForSeconds(0.5f);
+            col.GetComponent<Renderer>().material.color = Color.red;
+            yield return new WaitForSeconds(0.5f);
+            col.GetComponent<Renderer>().material.color = Color.white;
+            GameObject.Find("Player 1").GetComponent<PlayerMovement>().extraJumpsValue = 2;
+            this.gameObject.SetActive(false);
+        }
+
+
+
+
     }
 }
