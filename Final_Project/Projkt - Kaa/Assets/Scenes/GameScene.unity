@@ -1290,7 +1290,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 983189702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c3f09d0fa01f8c42b167151cff5ebbe, type: 3}
+  m_Script: {fileID: 11500000, guid: 0786d40ef11601e4aa83361b7cc1ee45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8021d6607bd494b4ea8106a2e03b2fac, type: 3}
   - {fileID: 21300000, guid: 9f70ee567cf570a42ab48c198b43be93, type: 3}
   - {fileID: 21300000, guid: bf87fc7b84f9dfc42993c6bb5bddcba5, type: 3}
-  Health: 3
+  Health: 0
 --- !u!212 &983189704
 SpriteRenderer:
   m_ObjectHideFlags: 0
