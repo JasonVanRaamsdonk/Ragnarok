@@ -31,7 +31,7 @@ public class DestroyPowerUp : MonoBehaviour
 
         // offscreenX = (Screen.width / PixelPerfectCamera.pixelsToUnits)/2 + offset;
 
-        offscreenX = 14;
+        offscreenX = 20;
         offscreenY = 7;
 
         //even though we foind the halfway position of the screen we're still goinmg to take 
@@ -73,6 +73,17 @@ public class DestroyPowerUp : MonoBehaviour
             {
                 OnOutOfBounds();
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (this.gameObject.name.Equals("PotionUpgrade(Clone)") && col.gameObject.name.Equals("JumpUpgrade_01(Clone)"))
+        {
+
+            this.GetComponent<CircleCollider2D>().enabled = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
+
         }
     }
 
