@@ -6,13 +6,14 @@ public class PowerUpPickup : MonoBehaviour
 {
    bool triggered = false; // trigger for when powerup lands on platform
    Collider2D col;
+
    void start()
     {
         gameObject.SetActive(true);
         GetComponent<SpriteRenderer>().enabled = false;
     }
 
-	void Update () {
+	void Update () {    
         // onTriggerExit() workaround since it doesnt recognise when an object is destroyed
         if ( triggered && !col.gameObject.activeSelf) // if trigger; powerup landed, and platform collider properties are off
         {
