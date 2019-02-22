@@ -19,6 +19,9 @@ public class Player2QuickFire : MonoBehaviour
     // Snake Tail
     public Rigidbody2D Tail;
     public Transform TailOrigin;
+    public GameObject TempPoint;
+    public GameObject EndPoint;
+    public GameObject DeathPoint;
 
     // Cooldown
     public float QuickFireCooldown;
@@ -49,6 +52,9 @@ public class Player2QuickFire : MonoBehaviour
                 NextAtivateTime = Time.time + Ability1Cooldown;
 
                 Rigidbody2D SnakeTailClone = (Rigidbody2D)Instantiate(Tail, TailOrigin.position, TailOrigin.rotation);
+                SnakeTailClone.GetComponent<Tail>().tempPoint = TempPoint;
+                SnakeTailClone.GetComponent<Tail>().EndPoint = EndPoint;
+                SnakeTailClone.GetComponent<Tail>().DeathPoint = DeathPoint;
 
             }
             else if (Input.GetButton("Fire2"))

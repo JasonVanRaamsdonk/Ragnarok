@@ -92,7 +92,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6260219243475778064}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -199,9 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4893aaa133590c4085f75d2e9da2bd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeletePoint: 20
+  SnakeTailAnimator: {fileID: 6260219243475778065}
+  EndPoint: {fileID: 0}
   tempPoint: {fileID: 0}
-  StopPoint: -1
-  dropSpeed: 0
-  Speed: {x: 0, y: -6}
-  ReverseSpeed: {x: 0, y: 6}
+  dropSpeed: 0.75
