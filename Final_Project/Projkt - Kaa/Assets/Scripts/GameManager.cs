@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public GameObject playerPrefab;
 
     private bool gameStarted;
-    // a flag to know when the game has startedor when the game is over
+    // a flag to know when the game has started or when the game is over
     private TimeManager timeManager;
     private GameObject player;
     // create player prefab when we reset our game 
