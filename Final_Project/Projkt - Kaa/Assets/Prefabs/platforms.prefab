@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 32
-  health: 100
+  health: 150
   deathEffect: {fileID: 0}
 --- !u!114 &8750152625745719182
 MonoBehaviour:
