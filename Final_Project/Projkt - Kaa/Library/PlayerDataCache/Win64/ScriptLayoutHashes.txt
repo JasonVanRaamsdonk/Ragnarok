@@ -1,10 +1,10 @@
 Win64
 PlayerPath?
-C:/Users/Vlad/Desktop/Unity Games/1/PlatformTraverse.exe
+C:/Users/Vlad/Desktop/Unity Games/1/game/PlatformTraverse.exe
 SceneListBegin?
-Assets/Scenes/GameScene.unity
+Assets/Scenes/StartScene.unity
 SceneListEnd?
-2038f7cac4d759916e6f39471764323d Assembly-CSharp.dll:.Player2QuickFire
+be3c028c7455284d8c9f47a12a8b9680 Assembly-CSharp.dll:.Player2QuickFire
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -20,10 +20,11 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.G
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 b2503c56324a31cdcb4d4f191e5e9a28 Assembly-CSharp.dll:.arrowDistuction
+278d83aea9f5a02ff4f7ba0a5d4fe42f Assembly-CSharp.dll:.Player1Health
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 e90c097ce0b4af6533de778432270367 Assembly-CSharp.dll:.InputState
 950fc671e21278784c7831ee29684968 Assembly-CSharp.dll:.Obstacles
-14f0541be3fc274e078f10de54c7c730 Assembly-CSharp.dll:.PlayerMovement
+00433ae6e50537ad7daf7bad66d92fc8 Assembly-CSharp.dll:.PlayerMovement
 d1f07c9e64b7817e6271f80bb03de25f Assembly-CSharp.dll:.GameManager
 342fc32bd7cd802c87d7ed2ba548c2ec Assembly-CSharp.dll:.DestroyPowerUp
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -59,8 +60,6 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -128,10 +127,12 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LoadScene
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 d2af29d1a48a6eede4d45f600d850eb3 Assembly-CSharp.dll:.DestroyOffscreen
+5f73914a25ba3d15666b5c97d04d77e7 Assembly-CSharp.dll:.RespawnPlatformDelete
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlayerAnimationManager
 53f83a0a23da6de14e3b80f5b3a1a2fa Assembly-CSharp.dll:.Spawner
@@ -184,3 +185,6 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+485e4fd979d37caeb887aef2cf4ec36d Assembly-CSharp.dll:.PlayerRespawning
+6d78154da8eefbaec00123ce16a0a738 Assembly-CSharp.dll:.FireballProjectile
+5817ae21edcea84da8c63002e24ed9cf Assembly-CSharp.dll:.Tail
