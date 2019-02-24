@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerRespawning : MonoBehaviour
 {
-    private Vector3 SpawnPoint;
-    private Vector3 DeathPoint;
-    private Rigidbody2D player;
     public Rigidbody2D SpawnPlatform;
     public Transform PlatformSpawnPoint;
     public GameObject HealthBar;
+    private Vector3 SpawnPoint;
+    private Vector3 DeathPoint;
+    private Rigidbody2D player;
     private Collider2D col;
+    private bool collisionCheck;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,12 @@ public class PlayerRespawning : MonoBehaviour
         SpawnPoint = new Vector3(0.5f, 21, 0);
         DeathPoint = new Vector3(0, -15, 0);
 
+        // Components
         player = GetComponent<Rigidbody2D>();
+        col = GetComponent<PolygonCollider2D>();
+
+        // default flag value
+        collisionCheck = false;
     }
 
     // Update is called once per frame
@@ -31,7 +37,7 @@ public class PlayerRespawning : MonoBehaviour
             player.constraints = RigidbodyConstraints2D.FreezePositionX;
 
         }
-        else
+        else if (collisionCheck == false)
         {
             // if player in play area, reset player constraints and freeze rotation
             player.constraints = RigidbodyConstraints2D.None;
@@ -41,7 +47,9 @@ public class PlayerRespawning : MonoBehaviour
 
         // if player drops out of world
         if(this.transform.position.y < -11)
-        { 
+        {
+            collisionCheck = false;
+
             // move player to Respawn point and reset velocity 
             this.transform.position = SpawnPoint;
             player.velocity = Vector2.zero;
@@ -56,7 +64,7 @@ public class PlayerRespawning : MonoBehaviour
 
     }
 
-    // spawn sespawn platform when player drops below the world
+    // spawn respawn platform when player drops below the world
     IEnumerator SpawnRespawnPlatform()
     {
         yield return new WaitForSeconds(0.5f);
@@ -68,19 +76,19 @@ public class PlayerRespawning : MonoBehaviour
     IEnumerator TouchSnakeRespawn()
     {
         // change colours 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         col.GetComponent<Renderer>().material.color = Color.red;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         col.GetComponent<Renderer>().material.color = Color.white;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         col.GetComponent<Renderer>().material.color = Color.red;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         col.GetComponent<Renderer>().material.color = Color.white;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         
         // reset player 1 rigidbody constraints
         player.constraints = RigidbodyConstraints2D.None;
@@ -91,19 +99,24 @@ public class PlayerRespawning : MonoBehaviour
         player.velocity = Vector2.zero;
     }
 
-    /*
-
     // if player 1 collides with snake
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if(other.gameObject.name == "")
+        // check if colliding with Player 2 (Snake)
+        if(collision.gameObject.tag == "Player2")
         {
+            // flag check
+            collisionCheck = true;
+
+            Debug.Log("Hit Snake Body");
+
             // freeze player 1
             player.constraints = RigidbodyConstraints2D.FreezeAll;
+            StartCoroutine(TouchSnakeRespawn());
 
-            StartCoroutine(SpawnRespawnPlatform());
         }
+        
     }
 
-    */
+    
 }

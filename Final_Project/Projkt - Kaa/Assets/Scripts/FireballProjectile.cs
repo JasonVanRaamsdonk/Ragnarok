@@ -17,11 +17,13 @@ public class FireballProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if fireball out of screen - destroy Fireball
         if (transform.position.x > DeletePoint)
         {
             Destroy(gameObject);
         }
 
+        // add velocity
         fireball.velocity = Speed;
     }
 }

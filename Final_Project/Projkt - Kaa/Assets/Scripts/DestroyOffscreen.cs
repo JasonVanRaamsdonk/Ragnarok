@@ -13,7 +13,7 @@ public class DestroyOffscreen : MonoBehaviour
     private float offscreenX = 0;
     private Rigidbody2D body2d;
 
-    public int health = 100;
+    public int health = 150;
     public GameObject deathEffect;
 
     void Awake()
@@ -30,7 +30,7 @@ public class DestroyOffscreen : MonoBehaviour
             OnOutOfBounds();
         }
 
-        if ( health <= 50)
+        if ( health <= 100)
         {
             GetComponent<Renderer>().material.color = Color.red;
         }

@@ -4,65 +4,73 @@ using UnityEngine;
 
 public class Tail : MonoBehaviour
 {
-    public int DeletePoint;
+    // animator
+    public Animator SnakeTailAnimator;
+
+    // transform points
+    public GameObject EndPoint;
     public GameObject tempPoint;
-    public int StopPoint;
+    public GameObject DeathPoint;
+
     public float dropSpeed;
-    public Vector2 Speed;
-    public Vector2 ReverseSpeed;
+
     private Rigidbody2D tail;
-    private bool flag;
 
     // Start is called before the first frame update
     void Start()
     {
-        flag = false;
+        // components
         tail = GetComponent<Rigidbody2D>();
+
+        // start coroutines for snake tail ability (ability 2)
+        StartCoroutine(TailWhip());
+        StartCoroutine(TailDrop());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y > DeletePoint)
-        {
-            Destroy(gameObject);
-        }
-        else if (transform.position.y < StopPoint)
-        {
-            flag = true;
-        }
-
-        if (flag == false && transform.position.y > StopPoint)
-        {
-            tail.velocity = Speed;
-        }
-        else if (flag == true)
-        {
-            tail.velocity = ReverseSpeed;
-        }
+        
 
     }
 
-    // work in progress animation 
-    /*
-    IEnumerator TailMove()
-    {
-        yield return new WaitForSeconds(1.7f);
-
-        if (flag == false && transform.position.y > StopPoint)
-        {
-            tail.velocity = Speed;
-        }
-        else if (flag == true)
-        {
-            tail.velocity = ReverseSpeed;
-        }
-    }
-
+    // move tail into frame and whip tail around
     IEnumerator TailWhip()
     {
-        transform.position = Vector2.MoveTowards(transform.position, tempPoint.transform.position, dropSpeed);
-        yield return new WaitForSeconds(0.5f);
+        // move into frame
+        transform.position = Vector2.MoveTowards(transform.position, tempPoint.transform.position, 1);
+        yield return new WaitForSeconds(0.1f);
+
+        // play animation
+        SnakeTailAnimator.SetBool("Preparing", true);
+        yield return new WaitForSeconds(2.0f);
+
+        SnakeTailAnimator.SetBool("Preparing", false);
     }
-    */
+
+    // make tail drop into play area - destroying any platform it touches
+    IEnumerator TailDrop()
+    {
+        // wait for TailWhip coroutine to finish exectuting 
+        yield return new WaitForSeconds(2.3f);
+
+        // move to bottom most position
+        for (int i = 0; i < 15; i++)
+        {
+            yield return new WaitForSeconds(0.04f);
+            transform.position = Vector2.MoveTowards(transform.position, EndPoint.transform.position, dropSpeed);
+        }
+
+        // move out of play area to be destroyed
+        for (int i = 0; i < 30; i++)
+        {
+            yield return new WaitForSeconds(0.04f);
+            transform.position = Vector2.MoveTowards(transform.position, DeathPoint.transform.position, dropSpeed);
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        Destroy(gameObject);
+
+    }
 }

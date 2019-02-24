@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6260219243475778094}
   - component: {fileID: 1599537421173734056}
   - component: {fileID: 6260219243475778065}
-  - component: {fileID: 3198443360291018671}
+  - component: {fileID: 5924740880321007438}
   - component: {fileID: 6776916494523804189}
   m_Layer: 0
   m_Name: SnakeTail
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1395991967
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 297489b5698b8f54da651400dff0c882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -92,7 +92,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6260219243475778064}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -123,7 +123,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!60 &3198443360291018671
+--- !u!60 &5924740880321007438
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +133,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,44 +148,45 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.26999998, y: -1.63}
-      - {x: 0.37, y: -1.29}
-      - {x: 0.51, y: -0.48}
-      - {x: 0.66999996, y: 0.64}
-      - {x: 0.75, y: 1.5999999}
-      - {x: 0.98999995, y: 3.36}
-      - {x: 1.14, y: 4.88}
-      - {x: 1.14, y: 5.12}
-      - {x: -2.18, y: 5.12}
-      - {x: -2.18, y: 4.79}
-      - {x: -2.11, y: 4.7599998}
-      - {x: -2.11, y: 3.99}
-      - {x: -2.03, y: 3.9599998}
-      - {x: -2.03, y: 3.4299998}
-      - {x: -1.9499999, y: 2.87}
-      - {x: -1.87, y: 2.55}
-      - {x: -1.79, y: 2.31}
-      - {x: -1.63, y: 1.67}
-      - {x: -1.55, y: 1.03}
-      - {x: -1.4699999, y: 0.71}
-      - {x: -1.39, y: 0.55}
-      - {x: -1.31, y: 0.22999999}
-      - {x: -1.0699999, y: -0.32999998}
-      - {x: -0.98999995, y: -0.81}
-      - {x: -0.90999997, y: -1.13}
-      - {x: -0.83, y: -1.53}
-      - {x: -0.75, y: -2.01}
-      - {x: -0.66999996, y: -2.57}
-      - {x: -0.59, y: -2.97}
-      - {x: -0.51, y: -3.29}
-      - {x: -0.35, y: -4.0899997}
-      - {x: -0.26999998, y: -4.12}
-      - {x: -0.26, y: -4.7999997}
-      - {x: -0.24, y: -4.8199997}
-      - {x: -0.13, y: -4.8199997}
-      - {x: -0.03, y: -4.74}
-      - {x: 0.13, y: -3.53}
-      - {x: 0.17999999, y: -3.1999998}
+    - - {x: 0.59, y: -1.8399999}
+      - {x: 0.75, y: -0.71999997}
+      - {x: 0.82, y: 0.08}
+      - {x: 0.90999997, y: 1.73}
+      - {x: 1.01, y: 2.07}
+      - {x: 1.06, y: 3.52}
+      - {x: 1.38, y: 4.56}
+      - {x: 1.53, y: 4.68}
+      - {x: 1.62, y: 4.83}
+      - {x: 1.62, y: 5.12}
+      - {x: -1.78, y: 5.12}
+      - {x: -1.78, y: 4.89}
+      - {x: -1.67, y: 4.67}
+      - {x: -1.4699999, y: 4.47}
+      - {x: -1.39, y: 4.15}
+      - {x: -1.31, y: 3.75}
+      - {x: -1.23, y: 3.1899998}
+      - {x: -1.15, y: 2.87}
+      - {x: -1.0699999, y: 2.84}
+      - {x: -1.0699999, y: 1.8299999}
+      - {x: -0.98999995, y: 1.8}
+      - {x: -0.98999995, y: 0.87}
+      - {x: -0.83, y: -0.089999996}
+      - {x: -0.75, y: -0.12}
+      - {x: -0.75, y: -0.96999997}
+      - {x: -0.66999996, y: -1.29}
+      - {x: -0.59, y: -1.93}
+      - {x: -0.51, y: -2.33}
+      - {x: -0.42999998, y: -2.81}
+      - {x: -0.35, y: -3.21}
+      - {x: -0.29, y: -3.6899998}
+      - {x: -0.12, y: -4.2599998}
+      - {x: -0.02, y: -4.56}
+      - {x: 0.049999997, y: -4.65}
+      - {x: 0.06, y: -4.66}
+      - {x: 0.22999999, y: -4.66}
+      - {x: 0.39999998, y: -4.0899997}
+      - {x: 0.42999998, y: -2.99}
+      - {x: 0.53, y: -2.6499999}
 --- !u!114 &6776916494523804189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4893aaa133590c4085f75d2e9da2bd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeletePoint: 20
-  StopPoint: -1
-  Speed: {x: 0, y: -6}
-  ReverseSpeed: {x: 0, y: 6}
+  SnakeTailAnimator: {fileID: 6260219243475778065}
+  EndPoint: {fileID: 0}
+  tempPoint: {fileID: 0}
+  DeathPoint: {fileID: 0}
+  dropSpeed: 0.75
