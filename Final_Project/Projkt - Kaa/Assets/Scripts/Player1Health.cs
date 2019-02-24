@@ -39,7 +39,10 @@ public class Player1Health : MonoBehaviour
         }
         else if (Health <= 0)
         {
+            // if player health is zero - Player 1 loses 
             spriteRenderer.sprite = sprites[3];
+
+
         }
 
     }

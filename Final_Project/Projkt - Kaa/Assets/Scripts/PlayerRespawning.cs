@@ -13,8 +13,6 @@ public class PlayerRespawning : MonoBehaviour
     private Collider2D col;
     private bool collisionCheck;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +20,11 @@ public class PlayerRespawning : MonoBehaviour
         SpawnPoint = new Vector3(0.5f, 21, 0);
         DeathPoint = new Vector3(0, -15, 0);
 
+        // Components
         player = GetComponent<Rigidbody2D>();
         col = GetComponent<PolygonCollider2D>();
+
+        // default flag value
         collisionCheck = false;
     }
 
@@ -63,7 +64,7 @@ public class PlayerRespawning : MonoBehaviour
 
     }
 
-    // spawn sespawn platform when player drops below the world
+    // spawn respawn platform when player drops below the world
     IEnumerator SpawnRespawnPlatform()
     {
         yield return new WaitForSeconds(0.5f);
@@ -98,13 +99,13 @@ public class PlayerRespawning : MonoBehaviour
         player.velocity = Vector2.zero;
     }
 
-    
-
     // if player 1 collides with snake
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // check if colliding with Player 2 (Snake)
         if(collision.gameObject.tag == "Player2")
         {
+            // flag check
             collisionCheck = true;
 
             Debug.Log("Hit Snake Body");
