@@ -15,6 +15,7 @@ public class RespawnPlatformDelete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if platform past delete point - destroy gameObject
         if(transform.position.x < deletePoint)
         {
             Destroy(gameObject);
