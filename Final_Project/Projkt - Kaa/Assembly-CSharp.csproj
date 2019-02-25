@@ -94,7 +94,9 @@
     <Compile Include="Assets\Scripts\Tail.cs" />
     <Compile Include="Assets\Scripts\TiledBackground.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\SetVolume.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
+<<<<<<< HEAD
       <HintPath>C:/Users/jason/Desktop/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
@@ -108,6 +110,21 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/jason/Desktop/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+=======
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+>>>>>>> 06dc5ab5b252c8f1c99930559f23bbf704bae68c
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -311,6 +328,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
+<<<<<<< HEAD
       <HintPath>C:/Users/jason/Desktop/Project-Kaa/Final_Project/Projkt - Kaa/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
@@ -318,6 +336,15 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/jason/Desktop/Project-Kaa/Final_Project/Projkt - Kaa/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+=======
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/Mo/Documents/Project-Kaa/Final_Project/Projkt - Kaa/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+>>>>>>> 06dc5ab5b252c8f1c99930559f23bbf704bae68c
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
