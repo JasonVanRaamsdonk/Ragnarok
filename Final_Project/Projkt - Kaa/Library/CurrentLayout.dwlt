@@ -73,7 +73,11 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 87
+=======
+  controlID: 51
+>>>>>>> version10
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +128,11 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 14
+=======
+  controlID: 138
+>>>>>>> version10
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +184,11 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 13
+=======
+  controlID: 137
+>>>>>>> version10
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,7 +213,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
+<<<<<<< HEAD
   controlID: 12
+=======
+  controlID: 136
+>>>>>>> version10
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -452,9 +468,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 38290000
     m_LastClickedID: 10552
     m_ExpandedIDs: 0000000050260000c6260000522700007e27000012280000462800008c280000e2280000162900004a2b00007e2b0000de2b0000182c0000202c0000582c0000
+=======
+    m_SelectedIDs: 122b0000
+    m_LastClickedID: 11026
+    m_ExpandedIDs: 00000000a826000014270000a0270000c82700005228000086280000ca28000020290000be290000802b0000b42b0000482c0000502c0000882c0000
+>>>>>>> version10
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -482,7 +504,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000050260000c6260000522700007e27000012280000462800008c280000e2280000162900004a2b00007e2b0000de2b0000182c0000202c0000582c0000
+=======
+    m_ExpandedIDs: 00000000a826000014270000a0270000c82700005228000086280000ca28000020290000be290000802b0000b42b0000482c0000502c0000882c0000
+>>>>>>> version10
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
