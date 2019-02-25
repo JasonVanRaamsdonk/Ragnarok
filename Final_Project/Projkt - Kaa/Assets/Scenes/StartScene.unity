@@ -149,8 +149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292, y: -229.70001}
-  m_SizeDelta: {x: 74.3, y: 28.8}
+  m_AnchoredPosition: {x: 315, y: -192}
+  m_SizeDelta: {x: 74.3, y: 17.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427726042
 MonoBehaviour:
@@ -307,7 +307,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1395991967
-  m_SortingLayer: -2
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43002c9f95ed3a246af3f35a7d0bce59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -465,7 +465,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1873598619
-  m_SortingLayer: -1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ca6bf931484aa044b9edda4f2ad277f2, type: 3}
   m_Color: {r: 0.82664484, g: 1, b: 0, a: 1}
@@ -608,8 +608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310.1, y: -217}
-  m_SizeDelta: {x: 54.3, y: 38.9}
+  m_AnchoredPosition: {x: -318, y: -182}
+  m_SizeDelta: {x: 40.39, y: 24.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292336488
 MonoBehaviour:
@@ -761,7 +761,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: e69656c64d94c7e4dbba459b730029b4,
+    m_HighlightedSprite: {fileID: 21300000, guid: e548fbb2c47872743803b1059d0ea5a9,
       type: 3}
     m_PressedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -842,8 +842,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -229}
-  m_SizeDelta: {x: 314.3, y: 27.4}
+  m_AnchoredPosition: {x: 4, y: -180}
+  m_SizeDelta: {x: 264.73, y: 20.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401670922
 MonoBehaviour:
@@ -891,7 +891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10.479998, y: -4.1900005}
+  m_AnchoredPosition: {x: -10.479998, y: -4.1899996}
   m_SizeDelta: {x: -20.97, y: -8.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413880666
@@ -1195,7 +1195,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1873598619
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &1836002007
@@ -1293,7 +1293,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -835925311
-  m_SortingLayer: -3
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eb846177ba327cd49a89132a35cc7863, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
