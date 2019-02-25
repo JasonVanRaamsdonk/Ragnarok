@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class LoadScene : MonoBehaviour
+
 {
 
     public void loadScenes(int sceneNumber)
@@ -13,13 +14,8 @@ public class LoadScene : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         SceneManager.LoadScene(sceneNumber);
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void doQuit()
     {
-        this.GetComponentInChildren<Text>().color = Color.red;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        this.GetComponentInChildren<Text>().color = Color.green;
+        Application.Quit();
     }
 }
