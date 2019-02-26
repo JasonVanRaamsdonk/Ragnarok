@@ -28,6 +28,7 @@ public class DestroyOffscreen : MonoBehaviour
         if (health <= 0)
         {
             OnOutOfBounds();
+            FindObjectOfType<AudioManager>().PlaySound("PlatformDeath");
         }
 
         if ( health <= 100)

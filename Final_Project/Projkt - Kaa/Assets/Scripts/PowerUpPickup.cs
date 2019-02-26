@@ -35,6 +35,7 @@ public class PowerUpPickup : MonoBehaviour
         // when player touches potionUpgrade
         if (this.gameObject.name.Equals("PotionUpgrade(Clone)") && col.gameObject.name.Equals("Player 1"))
         {
+            FindObjectOfType<AudioManager>().PlaySound("PowerUp");
             //get life if not 3 
             if (GameObject.Find("Player1HealthBar").GetComponent<Player1Health>().Health < 4)
             {
@@ -48,9 +49,8 @@ public class PowerUpPickup : MonoBehaviour
         // when player touches jumpUpgrade
         if (this.gameObject.name.Equals("JumpUpgrade_01(Clone)") && col.gameObject.name.Equals("Player 1"))
         {
-            // do something
+            FindObjectOfType<AudioManager>().PlaySound("PowerUp");
             StartCoroutine(waitTime());
-
         }
 
         IEnumerator waitTime()
