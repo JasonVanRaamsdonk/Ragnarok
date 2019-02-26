@@ -7,6 +7,8 @@ TagManager:
   - PowerUpPickup
   - PlatformIsTrigger
   - Player2
+  - Portal
+  - Player1
   layers:
   - Default
   - TransparentFX
