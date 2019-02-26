@@ -196,11 +196,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6260219243475778064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4893aaa133590c4085f75d2e9da2bd0, type: 3}
+  m_Script: {fileID: 11500000, guid: 901bd48514c93c640ab9d80b9a34974f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SnakeTailAnimator: {fileID: 6260219243475778065}
-  EndPoint: {fileID: 0}
   tempPoint: {fileID: 0}
-  DeathPoint: {fileID: 0}
-  dropSpeed: 0.75
+  speed: 0.125
+  time1: 2.7
+  time2: 1.5
