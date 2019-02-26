@@ -73,6 +73,9 @@ public class Player2QuickFire : MonoBehaviour
                 // testing input
                 Debug.Log("Button X Pressed");
 
+                // sound
+                FindObjectOfType<AudioManager>().PlaySound("QuickShot");                
+
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Cooldown2;
                 t2 = Time.time + QuickFireCooldown;
