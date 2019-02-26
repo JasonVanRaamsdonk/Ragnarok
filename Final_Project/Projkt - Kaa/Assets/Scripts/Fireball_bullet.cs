@@ -13,14 +13,13 @@ public class Fireball_bullet : MonoBehaviour
     void Start()
     {
         //rb.velocity = transform.right * speed;
-
     }
+
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         // Debug.Log(hitInfo.name);
         DestroyOffscreen enemy = hitInfo.GetComponent<DestroyOffscreen>();
-
         if (enemy != null)
         {
             enemy.TakeDamage(damage);

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6095422485581430298}
   - component: {fileID: 6095422485581430299}
-  - component: {fileID: 6095422485581430296}
   - component: {fileID: 6095422485581430292}
   - component: {fileID: 6095422485581430297}
   - component: {fileID: 6644208988786390291}
   - component: {fileID: 6085572767028634096}
+  - component: {fileID: 8075499057438257722}
   m_Layer: 0
   m_Name: FireballProjectile
   m_TagString: Untagged
@@ -84,27 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6095422485581430296
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6095422485581430293}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!95 &6095422485581430292
 Animator:
   serializedVersion: 3
@@ -137,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeletePoint: 12
-  Speed: {x: 6, y: 0}
+  Speed: 0.2
 --- !u!58 &6644208988786390291
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,9 +130,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.40300238, y: 0}
+  m_Offset: {x: 0.40300238, y: 0.04528761}
   serializedVersion: 2
-  m_Radius: 0.947991
+  m_Radius: 0.600786
 --- !u!114 &6085572767028634096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +148,24 @@ MonoBehaviour:
   damage: 1000
   rb: {fileID: 0}
   impactEffect: {fileID: 0}
+--- !u!50 &8075499057438257722
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6095422485581430293}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
