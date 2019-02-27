@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\PortalDelay.cs" />
     <Compile Include="Assets\Scripts\PortalMove.cs" />
     <Compile Include="Assets\Scripts\PowerUpPickup.cs" />
+    <Compile Include="Assets\Scripts\PressButto.cs" />
     <Compile Include="Assets\Scripts\QuickProjectileMotion.cs" />
     <Compile Include="Assets\Scripts\RecycleGameObject.cs" />
     <Compile Include="Assets\Scripts\RespawnPlatformDelete.cs" />
