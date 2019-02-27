@@ -25,9 +25,6 @@ public class Fireball_bullet : MonoBehaviour
             enemy.TakeDamage(damage);
         }
 
-        // Instantiate(impactEffect, transform.position, transform.rotation);
-
-        //GameObjetcUtil.Destroy(gameObject);
     }
 
 }
