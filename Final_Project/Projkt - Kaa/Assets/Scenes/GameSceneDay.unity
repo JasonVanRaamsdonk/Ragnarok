@@ -3430,6 +3430,7 @@ MonoBehaviour:
   portal: {fileID: 3583833958037535332, guid: 264fecf6a88857040952cf8d155f647e, type: 3}
   PortalLocation: {fileID: 1128149410}
   PortalPoint: {fileID: 987819600}
+  scene: 4
 --- !u!1001 &1129934334
 PrefabInstance:
   m_ObjectHideFlags: 0

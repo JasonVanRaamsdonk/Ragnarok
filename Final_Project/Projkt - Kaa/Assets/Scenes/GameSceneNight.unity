@@ -1170,6 +1170,7 @@ MonoBehaviour:
     m_Bits: 256
   extraJumpsValue: 2
   animator: {fileID: 401945441}
+  current: {x: 0, y: 0, z: 0}
 --- !u!114 &401945445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2595,6 +2596,7 @@ MonoBehaviour:
   portal: {fileID: 3583833958037535332, guid: 264fecf6a88857040952cf8d155f647e, type: 3}
   PortalLocation: {fileID: 1763086097}
   PortalPoint: {fileID: 1796088089}
+  scene: 5
 --- !u!1 &1796088089
 GameObject:
   m_ObjectHideFlags: 0

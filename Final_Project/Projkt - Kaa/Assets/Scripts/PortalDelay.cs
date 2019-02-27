@@ -10,6 +10,9 @@ public class PortalDelay : MonoBehaviour
     public Rigidbody2D portal;
     public Transform PortalLocation;
     public GameObject PortalPoint;
+
+    // scene to load
+    public int scene;
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,7 @@ public class PortalDelay : MonoBehaviour
         yield return new WaitForSeconds(PortalWait);
         Rigidbody2D Portal = (Rigidbody2D)Instantiate(portal, PortalLocation.position, PortalLocation.rotation);
         Portal.GetComponent<PortalMove>().portalPoint = PortalPoint;
+        Portal.GetComponent<PortalMove>().Scene = scene;
 
     }
 
