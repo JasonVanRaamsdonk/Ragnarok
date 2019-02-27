@@ -17,18 +17,23 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d; // shorthand for <rigidbody2d>
     private float movement = 0f; // used for storing movement 
     private bool hitPlatformTrigger = false;
+    public Vector3 current;
 
     // Start is called before the first frame update
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb2d = GetComponent<Rigidbody2D>();
+        current = this.transform.position;
     }
 
     // FixedUpdate is used for physics simulations
     void FixedUpdate()
     {
-        movement = Input.GetAxis("Player 1 - Horizontal");
+        if(current.x > -16)
+        {
+            movement = Input.GetAxis("Player 1 - Horizontal");
+        }
         if (movement != 0)
         {
             rb2d.velocity = new Vector2(speed * movement, rb2d.velocity.y); // move left/right
@@ -53,47 +58,57 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        //jumping mechanism to simulate a more retro game like gravity
-        if (rb2d.velocity.y < 0) // if the player is falling down it will increase the gravity
+        current = this.transform.position;
+        if (current.x < -10)
         {
-            rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            speed = 9;
+            movement = 1;
         }
-        else if (rb2d.velocity.y > 0 && !Input.GetButton("Jump")) // if the player small jumps it has a separate gravity speed
+        else
         {
-            rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowMultiplier - 1) * Time.deltaTime;
-        }
+            speed = 8;
+            //jumping mechanism to simulate a more retro game like gravity
+            if (rb2d.velocity.y < 0) // if the player is falling down it will increase the gravity
+            {
+                rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
+            else if (rb2d.velocity.y > 0 && !Input.GetButton("Jump")) // if the player small jumps it has a separate gravity speed
+            {
+                rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowMultiplier - 1) * Time.deltaTime;
+            }
 
-        //the player can't go out of the right screen view 
-        if (this.transform.position.x > 10)
-        {
-            float posy = this.transform.position.y;
-            this.transform.position = new Vector3(10.0f, posy, 0);
-        }
+            //the player can't go out of the right screen view 
+            if (this.transform.position.x > 10)
+            {
+                float posy = this.transform.position.y;
+                this.transform.position = new Vector3(10.0f, posy, 0);
+            }
 
-        if (IsGrounded()) // set jumpValue when the player is grounded
-        {
-            extraJumps = extraJumpsValue;
-        }
-        
-        if (Input.GetButtonDown("Jump") && extraJumps > 0) // jump mechanism
-        {
-            rb2d.velocity = Vector2.up * jumpForce;
-            extraJumps--;
-        }
-        // else if (Input.GetButtonDown("Jump") && (extraJumps == 0) && IsGrounded())
-        // {
-        //     rb2d.velocity = Vector2.up * jumpForce;
-        // }
+            if (IsGrounded()) // set jumpValue when the player is grounded
+            {
+                extraJumps = extraJumpsValue;
+            }
+
+            if (Input.GetButtonDown("Jump") && extraJumps > 0) // jump mechanism
+            {
+                rb2d.velocity = Vector2.up * jumpForce;
+                extraJumps--;
+            }
+            // else if (Input.GetButtonDown("Jump") && (extraJumps == 0) && IsGrounded())
+            // {
+            //     rb2d.velocity = Vector2.up * jumpForce;
+            // }
 
 
-        // just a fun piece of code. It changes the color of the player when the " " key pressed
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            GetComponent<Renderer>().material.color = Color.green;
-        }
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            GetComponent<Renderer>().material.color = Color.blue;
+            // just a fun piece of code. It changes the color of the player when the " " key pressed
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                GetComponent<Renderer>().material.color = Color.green;
+            }
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                GetComponent<Renderer>().material.color = Color.blue;
+            }
         }
     }
 
