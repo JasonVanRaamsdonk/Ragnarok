@@ -12,7 +12,7 @@ public class moveCamera : MonoBehaviour
         current = this.transform.position;
         if (current.x < 1)
         {
-            current.x += 30 * Time.deltaTime * 0.3f;
+            current.x += 23 * Time.deltaTime * 0.3f;
             transform.position = new Vector3(current.x, current.y, current.z);
         }
     }
