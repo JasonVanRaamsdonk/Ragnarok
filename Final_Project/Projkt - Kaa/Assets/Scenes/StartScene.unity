@@ -307,7 +307,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1395991967
-  m_SortingLayer: 2
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43002c9f95ed3a246af3f35a7d0bce59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -365,8 +365,8 @@ MonoBehaviour:
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
+  m_HorizontalAxis: Player 1 - Horizontal
+  m_VerticalAxis: Player 1 - Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
@@ -465,7 +465,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1873598619
-  m_SortingLayer: 3
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ca6bf931484aa044b9edda4f2ad277f2, type: 3}
   m_Color: {r: 0.82664484, g: 1, b: 0, a: 1}
@@ -1306,7 +1306,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -835925311
-  m_SortingLayer: 1
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eb846177ba327cd49a89132a35cc7863, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

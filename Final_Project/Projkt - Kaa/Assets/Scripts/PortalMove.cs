@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalMove : MonoBehaviour
 {
     private Rigidbody2D portal;
     public GameObject portalPoint;
+    public int Scene;
 
     public float speed;
 
@@ -23,12 +25,15 @@ public class PortalMove : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, portalPoint.transform.position, speed);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
         // check if player 1 has hit portal
-        if (collision.gameObject.tag == "Player1")
+        if (collider.gameObject.tag == "Player1")
         {
-            Debug.Log("Player 1 Hit Protal");
+            Debug.Log("Player 1 Hit Protal, Switching to Scene: " + Scene);
+
+            SceneManager.LoadScene(Scene);
+
         }
 
     }

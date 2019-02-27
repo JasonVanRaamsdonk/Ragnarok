@@ -18,7 +18,6 @@ public class arrowDistuction : MonoBehaviour
         if (sprite1.transform.position.y <= 6)
         {
             this.GetComponent<SpriteRenderer>().sortingOrder=-2;
-            
         }
     }
 

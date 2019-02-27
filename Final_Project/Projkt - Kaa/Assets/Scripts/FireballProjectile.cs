@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireballProjectile : MonoBehaviour
 {
     public int DeletePoint;
-    public Vector2 Speed;
+    public float Speed;
     private Rigidbody2D fireball;
 
     // Start is called before the first frame update
@@ -24,6 +24,6 @@ public class FireballProjectile : MonoBehaviour
         }
 
         // add velocity
-        fireball.velocity = Speed;
+        transform.position = new Vector2(transform.position.x + Speed, transform.position.y);
     }
 }
