@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is used for physics simulations
     void FixedUpdate()
     {
-        if(current.x > -16)
+        if(current.x > -12)
         {
             movement = Input.GetAxis("Player 1 - Horizontal");
         }
@@ -59,9 +59,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         current = this.transform.position;
-        if (current.x < -10)
+        if (current.x < -12)
         {
-            speed = 9;
+            speed = 7;
             movement = 1;
         }
         else
