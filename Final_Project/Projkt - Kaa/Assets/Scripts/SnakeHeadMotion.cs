@@ -21,13 +21,18 @@ public class SnakeHeadMotion : MonoBehaviour
     {
         if (Center.x < -4.174 && this.gameObject.name.Equals("SnakeHead"))
         {
-            Center.x += 30 * Time.deltaTime * 0.3f;
+            Center.x += 23 * Time.deltaTime * 0.3f;
             transform.position = new Vector2(Center.x, Center.y);
         }
         if (Center.x < -6.070 && this.gameObject.name.Equals("SnakeBody"))
         {
-            Center.x += 30 * Time.deltaTime * 0.3f;
+            Center.x += 23 * Time.deltaTime * 0.3f;
             transform.position = new Vector2(Center.x, Center.y);
+            this.GetComponent<PolygonCollider2D>().enabled = false;
+        }
+        else
+        {
+            this.GetComponent<PolygonCollider2D>().enabled = true;
         }
         //make snake head move in a circular fasion
         angle += MovementSpeed * Time.deltaTime;
