@@ -1,13 +1,13 @@
 sceneSetups:
 - path: Assets/Scenes/StartScene.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
 - path: Assets/Scenes/GameSceneDay.unity
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/GameSceneNight.unity
-  isLoaded: 0
-  isActive: 0
+  isLoaded: 1
+  isActive: 1
 - path: Assets/Scenes/GameSceneGalaxy.unity
   isLoaded: 0
   isActive: 0
