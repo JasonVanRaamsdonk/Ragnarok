@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetButtonDown("Jump") && extraJumps > 0) // jump mechanism
         {
+            FindObjectOfType<AudioManager>().PlaySound("Player1Jump");
             rb2d.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }

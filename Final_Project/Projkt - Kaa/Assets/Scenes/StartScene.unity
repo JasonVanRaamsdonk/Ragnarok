@@ -1403,7 +1403,7 @@ PrefabInstance:
     - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
         type: 3}
@@ -1477,6 +1477,32 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[3].pitch
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Player1Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[4].soundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f7da8c62d4e929b4d9678a8a520ea876, type: 3}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[4].mixerOutput
+      value: 
+      objectReference: {fileID: 24300002, guid: 2e65c7cf51c5ed04198e983bfc6ee6ad,
+        type: 2}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28473be6ae3f4d64f932031d934f252a, type: 3}
