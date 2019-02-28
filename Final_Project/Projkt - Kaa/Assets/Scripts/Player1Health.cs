@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player1Health : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class Player1Health : MonoBehaviour
         {
             // if player health is zero - Player 1 loses 
             spriteRenderer.sprite = sprites[3];
-
+            SceneManager.LoadScene(7);
 
         }
 
