@@ -1,4 +1,5 @@
 ﻿using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using System;
 using UnityEngine;
 
@@ -10,9 +11,13 @@ public class AudioManager : MonoBehaviour
     public SoundManager[] sounds;
     public static AudioManager instance;
 
+    private bool isGameScene;
+
     // Start is called before the first frame update
     void Awake()
     {
+        isGameScene = false;
+
         if (instance != null)
 		{
 			Destroy(gameObject);
@@ -35,12 +40,22 @@ public class AudioManager : MonoBehaviour
         }
 
         PlaySound("IntroMusic");  
-
     }
 
-    void Start()
+    void Update()
     {
-        
+        if (SceneManager.GetActiveScene().name == "GameSceneDay" && !isGameScene)
+        {
+            isGameScene = true;
+            StopSound("IntroMusic");
+            PlaySound("Main");
+        }
+        if (SceneManager.GetActiveScene().name == "StartScene" && isGameScene)
+        {
+            isGameScene = false;
+            StopSound("Main");
+            PlaySound("IntroMusic");
+        }
     }
 
     public void PlaySound(string sound)
@@ -53,4 +68,15 @@ public class AudioManager : MonoBehaviour
 		}
 		s.source.Play();
 	}
+
+    public void StopSound(string sound)
+    {
+        SoundManager s = Array.Find(sounds, item => item.name == sound);
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + name + " not found!");
+			return;
+		}
+		s.source.Stop();
+    }
 }

@@ -91,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetButtonDown("Jump") && extraJumps > 0) // jump mechanism
             {
+                FindObjectOfType<AudioManager>().PlaySound("PlayerJump");
                 rb2d.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
@@ -108,6 +109,10 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.B))
             {
                 GetComponent<Renderer>().material.color = Color.blue;
+            }
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                GetComponent<Renderer>().material.color = Color.white;
             }
         }
     }
