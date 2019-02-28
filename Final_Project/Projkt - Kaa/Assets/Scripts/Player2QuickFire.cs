@@ -66,15 +66,13 @@ public class Player2QuickFire : MonoBehaviour
                 // Instantiate SnakeTail and send postitions of GameObjects
                 Rigidbody2D SnakeTailClone = (Rigidbody2D)Instantiate(Tail, TailOrigin.position, TailOrigin.rotation);
                 SnakeTailClone.GetComponent<TailProjectile>().tempPoint = TempPoint;
+                FindObjectOfType<AudioManager>().PlaySound("TailShaker");
 
             }
             else if (Input.GetButton("Fire2") && Time.time > t2)
             {
                 // testing input
                 Debug.Log("Button X Pressed");
-
-                // sound
-                FindObjectOfType<AudioManager>().PlaySound("QuickShot");                
 
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Cooldown2;
@@ -84,6 +82,10 @@ public class Player2QuickFire : MonoBehaviour
 
                 // starting QuickFireAnimation
                 SnakeHeadAnimator.SetBool("OnQuickFire", true);
+
+                // play the QuickShot Sound
+                FindObjectOfType<AudioManager>().PlaySound("QuickShot");
+
                 // start Firing Coroutine
                 StartCoroutine(QuickFireAnimation());
 
@@ -101,9 +103,12 @@ public class Player2QuickFire : MonoBehaviour
 
                 // start animation and firing
                 SnakeHeadAnimator.SetBool("OnMouthFire", true);
+
                 // start firing Corountine 
                 StartCoroutine(FireballAnimation());
 
+                // Play the FireBall sound
+                FindObjectOfType<AudioManager>().PlaySound("FireBall");
             }
         }
 
