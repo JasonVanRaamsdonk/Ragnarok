@@ -14,7 +14,11 @@ public class PowerUpPickup : MonoBehaviour
 
 	void Update () {
         // onTriggerExit() workaround since it doesnt recognise when an object is destroyed
+<<<<<<< HEAD
         if ( (triggered && col == null) || (triggered && !col.gameObject.activeSelf)) // if trigger; powerup landed, and platform collider properties are off
+=======
+        if ( triggered && !col.gameObject.activeSelf) // if trigger; powerup landed, and platform collider properties are off
+>>>>>>> 0d9d945b99703cc1478c0884d49c7959168ed4c7
         {
            this.GetComponent<Rigidbody2D>().gravityScale = 0.5f; // when platform is destroyed, power up can fall
         }      	

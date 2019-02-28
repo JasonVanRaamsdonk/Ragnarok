@@ -73,6 +73,12 @@ public class Player2QuickFire : MonoBehaviour
                 // testing input
                 Debug.Log("Button X Pressed");
 
+<<<<<<< HEAD
+=======
+                // sound
+                FindObjectOfType<AudioManager>().PlaySound("QuickShot");                
+
+>>>>>>> 0d9d945b99703cc1478c0884d49c7959168ed4c7
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Cooldown2;
                 t2 = Time.time + QuickFireCooldown;
@@ -81,10 +87,13 @@ public class Player2QuickFire : MonoBehaviour
 
                 // starting QuickFireAnimation
                 SnakeHeadAnimator.SetBool("OnQuickFire", true);
+<<<<<<< HEAD
 
                 // play the QuickShot Sound
                 FindObjectOfType<AudioManager>().PlaySound("QuickShot");
 
+=======
+>>>>>>> 0d9d945b99703cc1478c0884d49c7959168ed4c7
                 // start Firing Coroutine
                 StartCoroutine(QuickFireAnimation());
 
@@ -102,12 +111,18 @@ public class Player2QuickFire : MonoBehaviour
 
                 // start animation and firing
                 SnakeHeadAnimator.SetBool("OnMouthFire", true);
+<<<<<<< HEAD
 
                 // start firing Corountine 
                 StartCoroutine(FireballAnimation());
 
                 // Play the FireBall sound
                 FindObjectOfType<AudioManager>().PlaySound("FireBall");
+=======
+                // start firing Corountine 
+                StartCoroutine(FireballAnimation());
+
+>>>>>>> 0d9d945b99703cc1478c0884d49c7959168ed4c7
             }
         }
 

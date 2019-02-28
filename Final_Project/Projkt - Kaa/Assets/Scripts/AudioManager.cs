@@ -50,11 +50,15 @@ public class AudioManager : MonoBehaviour
             StopSound("IntroMusic");
             PlaySound("Main");
         }
+<<<<<<< HEAD
         if (    (       SceneManager.GetActiveScene().name == "StartScene" 
                     ||  SceneManager.GetActiveScene().name == "Player1Win"
                     ||  SceneManager.GetActiveScene().name == "Player2Win"
                 )
                     && isGameScene)
+=======
+        if (SceneManager.GetActiveScene().name == "StartScene" && isGameScene)
+>>>>>>> 0d9d945b99703cc1478c0884d49c7959168ed4c7
         {
             isGameScene = false;
             StopSound("Main");
