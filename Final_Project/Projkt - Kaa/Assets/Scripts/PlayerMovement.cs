@@ -137,7 +137,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) // when player gets on the platform
     {
-        if (collision.gameObject.name.Equals("platforms(Clone)"))
+        if (collision.gameObject.name.Equals("platforms(Clone)") 
+            || collision.gameObject.name.Equals("platforms - Copy(Clone)") 
+            || collision.gameObject.name.Equals("platforms_night(Clone)"))
         {
             this.transform.SetParent(transform);
         }
@@ -146,7 +148,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision) // when player leaves the platform
     {
-        if (collision.gameObject.name.Equals("platforms(Clone)"))
+        if (collision.gameObject.name.Equals("platforms(Clone)")
+            || collision.gameObject.name.Equals("platforms - Copy(Clone)")
+            || collision.gameObject.name.Equals("platforms_night(Clone)"))
         {
             this.transform.SetParent(null); 
             hitPlatformTrigger = true;
