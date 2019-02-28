@@ -63,10 +63,6 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 7;
             movement = 1;
-            if (current.x < -12  && current.x > -13)
-            {
-                rb2d.velocity = Vector2.up * jumpForce * 4;
-            }
         }
         else
         {

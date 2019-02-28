@@ -23,7 +23,9 @@ public class PowerUpPickup : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         // if powerup touches the platform
-        if (col.gameObject.name.Equals("platforms(Clone)"))
+        if (    col.gameObject.name.Equals("platforms(Clone)") 
+            ||  col.gameObject.name.Equals("platforms_night(Clone)") 
+            ||  col.gameObject.name.Equals("platforms_galaxy(Clone)")    )
         {
             triggered = true; // powerup landed on platform
             this.col = col; // give player.collision the platform.collision properties
@@ -33,7 +35,12 @@ public class PowerUpPickup : MonoBehaviour
         }
 
         // when player touches potionUpgrade
-        if (this.gameObject.name.Equals("PotionUpgrade(Clone)") && col.gameObject.name.Equals("Player 1"))
+        if (    (   
+                        this.gameObject.name.Equals("PotionUpgrade(Clone)") 
+                    ||  this.gameObject.name.Equals("HealthUpgrade_night(Clone)")
+                )
+        
+            && col.gameObject.name.Equals("Player 1"))
         {
             FindObjectOfType<AudioManager>().PlaySound("PowerUp");
             //get life if not 3 
@@ -47,7 +54,11 @@ public class PowerUpPickup : MonoBehaviour
         }
 
         // when player touches jumpUpgrade
-        if (this.gameObject.name.Equals("JumpUpgrade_01(Clone)") && col.gameObject.name.Equals("Player 1"))
+        if (    (
+                        this.gameObject.name.Equals("JumpUpgrade_01(Clone)") 
+                    ||  this.gameObject.name.Equals("JumpUpgrade_01_night(Clone)")
+                )
+                && col.gameObject.name.Equals("Player 1"))
         {
             FindObjectOfType<AudioManager>().PlaySound("PowerUp");
             StartCoroutine(waitTime());
