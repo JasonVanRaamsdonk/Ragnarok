@@ -40,15 +40,20 @@ public class AudioManager : MonoBehaviour
         }
 
         PlaySound("IntroMusic");  
-
     }
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "GameScene" && !isGameScene)
+        if (SceneManager.GetActiveScene().name == "GameSceneDay" && !isGameScene)
         {
             isGameScene = true;
             StopSound("IntroMusic");
+            PlaySound("Main");
+        }
+        if (SceneManager.GetActiveScene().name == "StartScene" && isGameScene)
+        {
+            isGameScene = false;
+            StopSound("Main");
             PlaySound("IntroMusic");
         }
     }
