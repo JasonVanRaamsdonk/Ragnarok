@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 7220171081214126143}
   - component: {fileID: 6758410829540387436}
   m_Layer: 8
-  m_Name: platforms
+  m_Name: platforms_galaxy
   m_TagString: PlatformIsTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 1395991967
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b8305759aeae2d45b29b56417137507, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 929ea9cdab3e2ab45a559be40091f26f, type: 3}
+  m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -140,10 +140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 2b8305759aeae2d45b29b56417137507, type: 3}
-  - {fileID: 21300000, guid: bd781fb01588d614ebb1db97a815e80c, type: 3}
-  - {fileID: 21300000, guid: 20c87dfc38957564587794e43691d10c, type: 3}
-  - {fileID: 21300000, guid: f153231289a03c04283a3b4e7449ba21, type: 3}
+  - {fileID: 21300000, guid: 929ea9cdab3e2ab45a559be40091f26f, type: 3}
+  - {fileID: 21300000, guid: 503396cbd7d6dd64988e4ef1a1ed8453, type: 3}
+  - {fileID: 21300000, guid: cb4e80287352f2a43934830ee3356d55, type: 3}
   colliderOffset: {x: 0, y: 0}
 --- !u!61 &6137548862233452520
 BoxCollider2D:
