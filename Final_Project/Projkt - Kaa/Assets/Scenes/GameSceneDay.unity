@@ -3128,7 +3128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af157acb9687754a9ac24589b16ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PortalWait: 100
+  PortalWait: 10
   portal: {fileID: 3583833958037535332, guid: 264fecf6a88857040952cf8d155f647e, type: 3}
   PortalLocation: {fileID: 1128149410}
   PortalPoint: {fileID: 987819600}
