@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 8554235302073413759, guid: 67501c9aba0f0a643b529fbc6060236c, type: 3}
+  - {fileID: 8554235302073413759, guid: 73b31201e6d5a2549b9eed1eee981666, type: 3}
   delay: 2
   active: 1
   delayRange: {x: 12, y: 24}
@@ -534,7 +534,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 155405047}
-  - component: {fileID: 155405046}
   - component: {fileID: 155405048}
   m_Layer: 0
   m_Name: Spawner
@@ -543,23 +542,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &155405046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155405045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dec5ed4d03cdaf43b2277ce01b22d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 6261910902521260395, guid: 5bda54f82df988b4fb415e1fd8d8ad22, type: 3}
-  delay: 2
-  active: 1
-  delayRange: {x: 2, y: 3}
 --- !u!4 &155405047
 Transform:
   m_ObjectHideFlags: 0
@@ -874,7 +856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 8554235302073413759, guid: 67501c9aba0f0a643b529fbc6060236c, type: 3}
+  - {fileID: 8554235302073413759, guid: 73b31201e6d5a2549b9eed1eee981666, type: 3}
   delay: 2
   active: 1
   delayRange: {x: 12, y: 22}
@@ -1249,7 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 3974365985335026558, guid: 0d3088c3ee063c041883db1d0bf8f089, type: 3}
+  - {fileID: 7004866543499113902, guid: 25a486612c3d492409500adacba5b66c, type: 3}
   delay: 2
   active: 1
   delayRange: {x: 4, y: 8}
@@ -1953,7 +1935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 2489295787401736383, guid: 14e18a6fab62cef4b8d5ba03c6b663cd, type: 3}
+  - {fileID: 2489295787401736383, guid: 43b8638ff363ee9449b598b0c8bff4bd, type: 3}
   delay: 2
   active: 1
   delayRange: {x: 9, y: 24}
@@ -2450,7 +2432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 4205795195291860605, guid: f69131eac38c0c24cbe82a33eac08751, type: 3}
+  - {fileID: 4205795195291860605, guid: 7759a8f486952034ebcb7b2c9b99b474, type: 3}
   delay: 2
   active: 1
   delayRange: {x: 4, y: 8}
@@ -2689,7 +2671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 2489295787401736383, guid: 14e18a6fab62cef4b8d5ba03c6b663cd, type: 3}
+  - {fileID: 2489295787401736383, guid: 43b8638ff363ee9449b598b0c8bff4bd, type: 3}
   delay: 2
   active: 1
   delayRange: {x: 8, y: 25}

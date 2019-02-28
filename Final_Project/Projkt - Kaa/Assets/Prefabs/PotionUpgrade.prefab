@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5778226219803771693}
   - component: {fileID: 7397241223369705931}
-  - component: {fileID: 7004471868366102471}
   - component: {fileID: 3667004542009876945}
   - component: {fileID: 2146975007479298767}
   - component: {fileID: 5379727074449063583}
   - component: {fileID: 4819467333526964970}
+  - component: {fileID: 8100524534019807057}
   m_Layer: 0
   m_Name: PotionUpgrade
   m_TagString: Untagged
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1395991967
-  m_SortingLayer: 2
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 758baca2dd148d945973cb100b55754a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,18 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7004471868366102471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3974365985335026558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f8e001a0a435954a8c2d11e135aead2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3667004542009876945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,5 +145,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92ae573c1c8ddd6418568b4c70477735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8100524534019807057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974365985335026558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f205b27f794c034290d5701e0c74758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
