@@ -66,6 +66,7 @@ public class Player2QuickFire : MonoBehaviour
                 // Instantiate SnakeTail and send postitions of GameObjects
                 Rigidbody2D SnakeTailClone = (Rigidbody2D)Instantiate(Tail, TailOrigin.position, TailOrigin.rotation);
                 SnakeTailClone.GetComponent<TailProjectile>().tempPoint = TempPoint;
+                FindObjectOfType<AudioManager>().PlaySound("TailShaker");
 
             }
             else if (Input.GetButton("Fire2") && Time.time > t2)

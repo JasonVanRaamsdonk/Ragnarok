@@ -1403,7 +1403,7 @@ PrefabInstance:
     - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
         type: 3}
@@ -1570,6 +1570,32 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[6].loop
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[7].name
+      value: TailShaker
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[7].soundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e9fbd9eb3a0394b46b93531a8cc021a6, type: 3}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[7].mixerOutput
+      value: 
+      objectReference: {fileID: 24300002, guid: 2e65c7cf51c5ed04198e983bfc6ee6ad,
+        type: 2}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674047612113950104, guid: 28473be6ae3f4d64f932031d934f252a,
+        type: 3}
+      propertyPath: sounds.Array.data[7].pitch
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28473be6ae3f4d64f932031d934f252a, type: 3}
