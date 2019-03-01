@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3529879921907000710}
   - component: {fileID: 7220171081214126143}
   - component: {fileID: 6758410829540387436}
-  - component: {fileID: 7166867289684411348}
+  - component: {fileID: 9109254079728903576}
   m_Layer: 8
   m_Name: platforms_galaxy
   m_TagString: PlatformIsTrigger
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformCollider: {fileID: 6137548862233452520}
   platformTrigger: {fileID: 7220171081214126143}
---- !u!114 &7166867289684411348
+--- !u!114 &9109254079728903576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
