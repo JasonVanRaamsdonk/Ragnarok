@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 6261910902521260392}
   - component: {fileID: 658642644}
   - component: {fileID: 8233012341657608285}
-  - component: {fileID: 8750152625745719182}
   - component: {fileID: 7926011149137191651}
   - component: {fileID: 6137548862233452520}
   - component: {fileID: 3529879921907000710}
   - component: {fileID: 7220171081214126143}
   - component: {fileID: 6758410829540387436}
+  - component: {fileID: 9109254079728903576}
   m_Layer: 8
   m_Name: platforms_galaxy
   m_TagString: PlatformIsTrigger
@@ -115,18 +115,6 @@ MonoBehaviour:
   offset: 32
   health: 200
   deathEffect: {fileID: 0}
---- !u!114 &8750152625745719182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6261910902521260395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f8e001a0a435954a8c2d11e135aead2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7926011149137191651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +219,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformCollider: {fileID: 6137548862233452520}
   platformTrigger: {fileID: 7220171081214126143}
+--- !u!114 &9109254079728903576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261910902521260395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f699d2fadac6549a250c01c603eea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

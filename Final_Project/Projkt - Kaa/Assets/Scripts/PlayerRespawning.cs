@@ -111,6 +111,7 @@ public class PlayerRespawning : MonoBehaviour
             Debug.Log("Hit Snake Body");
 
             // freeze player 1
+            FindObjectOfType<AudioManager>().PlaySound("PlayerDeath");
             player.constraints = RigidbodyConstraints2D.FreezeAll;
             StartCoroutine(TouchSnakeRespawn());
 
