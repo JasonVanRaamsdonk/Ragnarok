@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/GameSceneDay.unity
+- path: Assets/Scenes/Player2Win.unity
   isLoaded: 1
   isActive: 1
