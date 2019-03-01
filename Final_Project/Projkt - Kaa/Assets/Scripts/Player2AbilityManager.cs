@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2QuickFire : MonoBehaviour
+public class Player2AbilityManager : MonoBehaviour
 {
     // animator
     public Animator SnakeHeadAnimator;
@@ -31,7 +31,7 @@ public class Player2QuickFire : MonoBehaviour
     public float Ability2Cooldown;
 
     // animation cooldowns
-    private float Cooldown1 = 4.5f;
+    private float Cooldown1 = 5.5f;
     private float Cooldown2 = 2.6f;
     private float Cooldown3 = 1.3f;
 
@@ -61,7 +61,7 @@ public class Player2QuickFire : MonoBehaviour
 
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Cooldown1;
-                t1 = Time.time + Ability1Cooldown;
+                t1 = Time.time + Cooldown1 + Ability1Cooldown;
 
                 // Instantiate SnakeTail and send postitions of GameObjects
                 Rigidbody2D SnakeTailClone = (Rigidbody2D)Instantiate(Tail, TailOrigin.position, TailOrigin.rotation);
@@ -76,8 +76,8 @@ public class Player2QuickFire : MonoBehaviour
 
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Cooldown2;
-                t2 = Time.time + QuickFireCooldown;
-
+                t2 = Time.time + Cooldown2 + QuickFireCooldown;
+                
                 Debug.Log("Starting QuickFire Shots");
 
                 // starting QuickFireAnimation
@@ -97,7 +97,7 @@ public class Player2QuickFire : MonoBehaviour
 
                 // calculate next ability activate time
                 NextAtivateTime = Time.time + Cooldown3;
-                t3 = Time.time + Ability2Cooldown;
+                t3 = Time.time + Cooldown3 + Ability2Cooldown;
 
                 Debug.Log("Starting Fireball shot");
 
@@ -137,8 +137,6 @@ public class Player2QuickFire : MonoBehaviour
 
         Rigidbody2D ProjectileClone4 = (Rigidbody2D) Instantiate(projectile, QuickShootOrigin.position, QuickShootOrigin.rotation);
         ProjectileClone4.GetComponent<QuickProjectileMotion>().target = Target;
-
-        yield return new WaitForSeconds(0.5f);
 
         // turn snake animation off
         SnakeHeadAnimator.SetBool("OnQuickFire", false);
