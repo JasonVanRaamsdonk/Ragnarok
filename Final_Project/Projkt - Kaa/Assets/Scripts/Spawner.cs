@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
         if(active)
         {
             var newTransform = transform; // position were we want to spawn, refernece to the existing trasform
-                                          // of our game object
+                                          // of our game objectz
             GameObjetcUtil.Instantiate(prefabs[Random.Range(0, prefabs.Length)], newTransform.position);
             // Quaterion.identity: to set value of rotation to its defualt of zero
             ResetDelay();
