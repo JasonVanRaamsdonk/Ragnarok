@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
         if (    (       SceneManager.GetActiveScene().name == "StartScene" 
                     ||  SceneManager.GetActiveScene().name == "Player1Win"
                     ||  SceneManager.GetActiveScene().name == "Player2Win"
-                    ||  SceneManager.GetActiveScene().name == "GameSceneNight"
+                    ||  SceneManager.GetActiveScene().name == "GameSceneGalaxy"
                 )
                     && isGameScene)
         {
