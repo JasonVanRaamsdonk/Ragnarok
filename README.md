@@ -3,6 +3,8 @@ Unity 2D platform game - GamesFleadh 2019
 
 Trailer Link: https://www.youtube.com/watch?v=AZXpwN_yEvk
 
+Playable Game Link: https://jasonvanraamsdonk.github.io/Ragnarok-WebVersion/
+
 Role | Team Member
 ------------ | -------------
 Player 1 | Tadhg Orourke
