@@ -1,4 +1,4 @@
-# Project-Kaa
+# Ragnarok
 Unity 2D platform game - GamesFleadh 2019 - WINNER: Best in Game Design
 
 Trailer Link: https://www.youtube.com/watch?v=AZXpwN_yEvk
